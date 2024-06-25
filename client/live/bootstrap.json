@@ -128,17 +128,10 @@
   ],
   "artifacts": [
     {
-      "hash": "9cc54a805991bda336f6bbf47595651a80fa2aaa2e0d1744bf8b64d28aea934e",
+      "hash": "8e86fe7029b895d270ea07fa5105395cb4045ac23196e85dcca57a6448eab4df",
       "name": "game-0.0.3.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.3.jar",
-      "size": 4007188
-    },
-    {
-      "hash": "d533809890ccb15294b7214bcb38bbd60c908bb516b58dcf2f7c8f68f56de1dd",
-      "name": "graphics.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/graphics.jar",
-      "size": 38517,
-      "platform": []
+      "size": 4045107
     },
     {
       "hash": "493283495a17ac898b173fc476be33f8a0a5f363d405b212f44d01cd581a3913",
@@ -148,17 +141,24 @@
       "platform": []
     },
     {
-      "hash": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
-      "name": "synthetica.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/synthetica.jar",
-      "size": 693313,
-      "platform": []
-    },
-    {
       "hash": "197b5686e2e98dd7aebfc69b2a7ac64294316ae8a36cd196c7591fcc419729bb",
       "name": "discord-rpc.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/discord-rpc.jar",
       "size": 2067033,
+      "platform": []
+    },
+    {
+      "hash": "d533809890ccb15294b7214bcb38bbd60c908bb516b58dcf2f7c8f68f56de1dd",
+      "name": "graphics.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/graphics.jar",
+      "size": 38517,
+      "platform": []
+    },
+    {
+      "hash": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
+      "name": "synthetica.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/synthetica.jar",
+      "size": 693313,
       "platform": []
     },
     {
@@ -171,11 +171,11 @@
   ],
   "updates": [],
   "dependencyHashes": {
-    "game-0.0.3.jar": "9cc54a805991bda336f6bbf47595651a80fa2aaa2e0d1744bf8b64d28aea934e",
-    "graphics.jar": "d533809890ccb15294b7214bcb38bbd60c908bb516b58dcf2f7c8f68f56de1dd",
+    "game-0.0.3.jar": "8e86fe7029b895d270ea07fa5105395cb4045ac23196e85dcca57a6448eab4df",
     "clientlibs.jar": "493283495a17ac898b173fc476be33f8a0a5f363d405b212f44d01cd581a3913",
-    "synthetica.jar": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
     "discord-rpc.jar": "197b5686e2e98dd7aebfc69b2a7ac64294316ae8a36cd196c7591fcc419729bb",
+    "graphics.jar": "d533809890ccb15294b7214bcb38bbd60c908bb516b58dcf2f7c8f68f56de1dd",
+    "synthetica.jar": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
     "syntheticaBlackEye.jar": "aba4103ac457e232c2eb8e6116b65e42056829bcf6e23eefe464e7c6091a9e75"
   }
 }
