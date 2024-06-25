@@ -8,7 +8,8 @@
     "-Xincgc",
     "-XX:+UseConcMarkSweepGC",
     "-XX:+UseParNewGC",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "launcherJvm11Arguments": [
     "-XX:+DisableAttachMechanism",
@@ -16,7 +17,8 @@
     "-Xmx812m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "launcherJvm11WindowsArguments": [
     "-XX:+DisableAttachMechanism",
@@ -25,7 +27,8 @@
     "-Xmx812m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "launcherJvm17Arguments": [
     "-XX:+DisableAttachMechanism",
@@ -33,7 +36,8 @@
     "-Xmx512m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "launcherJvm17MacArguments": [
     "-XX:+DisableAttachMechanism",
@@ -42,7 +46,8 @@
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/com.apple.eawt\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "launcherJvm17WindowsArguments": [
     "-XX:+DisableAttachMechanism",
@@ -51,7 +56,8 @@
     "-Xmx812m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "clientJvmArguments": [
     "-XX:+DisableAttachMechanism",
@@ -61,7 +67,8 @@
     "-Xincgc",
     "-XX:+UseConcMarkSweepGC",
     "-XX:+UseParNewGC",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "clientJvm9Arguments": [
     "-XX:+DisableAttachMechanism",
@@ -69,7 +76,8 @@
     "-Xmx812m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "clientJvm17MacArguments": [
     "-XX:+DisableAttachMechanism",
@@ -77,14 +85,16 @@
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/com.apple.eawt\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "clientJvm17Arguments": [
     "-XX:+DisableAttachMechanism",
     "-Xmx812m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED"
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED"
   ],
   "artifacts": [
     {
