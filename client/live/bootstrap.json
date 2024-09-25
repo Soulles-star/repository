@@ -128,10 +128,10 @@
   ],
   "artifacts": [
     {
-      "hash": "9c02dcbaa044b0df84e76e1b36b2e077bcf5f0fb8651b71efeb6432f127dd484",
+      "hash": "cc903af2730819cdff693ed09568613626a675cfd7ee60f92737dcd2d9345532",
       "name": "game-0.0.5.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.5.jar",
-      "size": 4005870
+      "size": 4005877
     },
     {
       "hash": "493283495a17ac898b173fc476be33f8a0a5f363d405b212f44d01cd581a3913",
@@ -171,7 +171,7 @@
   ],
   "updates": [],
   "dependencyHashes": {
-    "game-0.0.5.jar": "9c02dcbaa044b0df84e76e1b36b2e077bcf5f0fb8651b71efeb6432f127dd484",
+    "game-0.0.5.jar": "cc903af2730819cdff693ed09568613626a675cfd7ee60f92737dcd2d9345532",
     "clientlibs.jar": "493283495a17ac898b173fc476be33f8a0a5f363d405b212f44d01cd581a3913",
     "discord-rpc.jar": "197b5686e2e98dd7aebfc69b2a7ac64294316ae8a36cd196c7591fcc419729bb",
     "graphics.jar": "d533809890ccb15294b7214bcb38bbd60c908bb516b58dcf2f7c8f68f56de1dd",
