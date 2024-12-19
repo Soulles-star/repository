@@ -43,7 +43,7 @@
         "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
     ],
     "dependencyHashes": {
-        "game-0.0.5.jar": "a015016af4b0d9fafb1d885a8845c7b13f21cee46126f939fcc13c8f1445718a"
+        "game-0.0.5.jar": "726464cedd5d65623bc5adc9c0cc39213a8dee4fd07495cb318eed8e2e49221f"
     },
     "launcherJvm17MacArguments": [
         "-XX:+DisableAttachMechanism",
@@ -152,7 +152,7 @@
             "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/game-0.0.5.jar",
             "size": 8718358,
             "name": "game-0.0.5.jar",
-            "hash": "a015016af4b0d9fafb1d885a8845c7b13f21cee46126f939fcc13c8f1445718a"
+            "hash": "726464cedd5d65623bc5adc9c0cc39213a8dee4fd07495cb318eed8e2e49221f"
         }
     ]
 }
