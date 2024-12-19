@@ -1,0 +1,105 @@
+{
+    "clientJvm17Arguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
+        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
+        "-Dawt.useSystemAAFontSettings=on",
+        "-Dswing.aatext=true"
+    ],
+    "launcherJvm17Arguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Drunelite.launcher.nojvm=true",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
+        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED"
+    ],
+    "buildCommit": "3e814d456426fa995a6529ac69135a5f6bd22c2d",
+    "launcherJvm11Arguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Drunelite.launcher.nojvm=true",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500"
+    ],
+    "dependencyHashes": {
+        "game-0.0.5.jar": "5e1baa37080bddbeb7afb93b7e41bce8df9e3d008221f41b71a8facde5cfbd41"
+    },
+    "launcherJvm17MacArguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Drunelite.launcher.nojvm=true",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
+        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
+        "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED"
+    ],
+    "clientJvmArguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
+        "-Xincgc",
+        "-XX:+UseConcMarkSweepGC",
+        "-XX:+UseParNewGC",
+        "-Dawt.useSystemAAFontSettings=on",
+        "-Dswing.aatext=true"
+    ],
+    "launcherArguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Drunelite.launcher.nojvm=true",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
+        "-Xincgc",
+        "-XX:+UseConcMarkSweepGC",
+        "-XX:+UseParNewGC"
+    ],
+    "launcherJvm17WindowsArguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Drunelite.launcher.nojvm=true",
+        "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,k_fps32.dll,k_fps64.dll",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
+        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED"
+    ],
+    "minimumLauncherVersion": "1.0.0",
+    "launcherJvm11WindowsArguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Drunelite.launcher.nojvm=true",
+        "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,k_fps32.dll,k_fps64.dll",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500"
+    ],
+    "clientJvm9Arguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
+        "-Dawt.useSystemAAFontSettings=on",
+        "-Dswing.aatext=true"
+    ],
+    "clientJvm17MacArguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
+        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
+        "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
+        "-Dawt.useSystemAAFontSettings=on",
+        "-Dswing.aatext=true"
+    ],
+    "projectVersion": "1.0.0",
+    "artifacts": [
+        {
+            "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/game-0.0.5.jar",
+            "size": 8718358,
+            "name": "game-0.0.5.jar",
+            "hash": "5e1baa37080bddbeb7afb93b7e41bce8df9e3d008221f41b71a8facde5cfbd41"
+        }
+    ]
+}
