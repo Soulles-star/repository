@@ -1,0 +1,181 @@
+{
+  "launcherArguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "-Xincgc",
+    "-XX:+UseConcMarkSweepGC",
+    "-XX:+UseParNewGC",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "launcherJvm11Arguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "launcherJvm11WindowsArguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "launcherJvm17Arguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Xmx512m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "launcherJvm17MacArguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "--add-opens\u003djava.desktop/com.apple.eawt\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "launcherJvm17WindowsArguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "clientJvmArguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "-Xincgc",
+    "-XX:+UseConcMarkSweepGC",
+    "-XX:+UseParNewGC",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "clientJvm9Arguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "clientJvm17MacArguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "--add-opens\u003djava.desktop/com.apple.eawt\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "clientJvm17Arguments": [
+    "-XX:+DisableAttachMechanism",
+    "-Xmx812m",
+    "-Xss2m",
+    "-XX:CompileThreshold\u003d1500",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
+    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+  ],
+  "artifacts": [
+    {
+      "hash": "f14bb6a6448d4f861971bfd6e04deb46e238f7ac6c652b8f6013d60d8460dc2b",
+      "name": "game-0.0.6.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.6.jar",
+      "size": 4015375
+    },
+    {
+      "hash": "493283495a17ac898b173fc476be33f8a0a5f363d405b212f44d01cd581a3913",
+      "name": "clientlibs.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/clientlibs.jar",
+      "size": 13961,
+      "platform": []
+    },
+    {
+      "hash": "197b5686e2e98dd7aebfc69b2a7ac64294316ae8a36cd196c7591fcc419729bb",
+      "name": "discord-rpc.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/discord-rpc.jar",
+      "size": 2067033,
+      "platform": []
+    },
+    {
+      "hash": "d533809890ccb15294b7214bcb38bbd60c908bb516b58dcf2f7c8f68f56de1dd",
+      "name": "graphics.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/graphics.jar",
+      "size": 38517,
+      "platform": []
+    },
+    {
+      "hash": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
+      "name": "synthetica.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/synthetica.jar",
+      "size": 693313,
+      "platform": []
+    },
+    {
+      "hash": "aba4103ac457e232c2eb8e6116b65e42056829bcf6e23eefe464e7c6091a9e75",
+      "name": "syntheticaBlackEye.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/syntheticaBlackEye.jar",
+      "size": 264525,
+      "platform": []
+    }
+  ],
+  "updates": [],
+  "dependencyHashes": {
+    "game-0.0.6.jar": "f14bb6a6448d4f861971bfd6e04deb46e238f7ac6c652b8f6013d60d8460dc2b",
+    "clientlibs.jar": "493283495a17ac898b173fc476be33f8a0a5f363d405b212f44d01cd581a3913",
+    "discord-rpc.jar": "197b5686e2e98dd7aebfc69b2a7ac64294316ae8a36cd196c7591fcc419729bb",
+    "graphics.jar": "d533809890ccb15294b7214bcb38bbd60c908bb516b58dcf2f7c8f68f56de1dd",
+    "synthetica.jar": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
+    "syntheticaBlackEye.jar": "aba4103ac457e232c2eb8e6116b65e42056829bcf6e23eefe464e7c6091a9e75"
+  }
+}
