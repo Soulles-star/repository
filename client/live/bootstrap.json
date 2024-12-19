@@ -1,12 +1,27 @@
 {
-    "clientJvm17Arguments": [
+    "projectVersion": "1.0.0",
+    "minimumLauncherVersion": "1.0.0",
+    "launcherArguments": [
         "-XX:+DisableAttachMechanism",
+        "-Drunelite.launcher.nojvm=true",
         "-Xmx1g",
         "-Xss2m",
         "-XX:CompileThreshold=1500",
-        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
-        "-Dawt.useSystemAAFontSettings=on",
-        "-Dswing.aatext=true",
+        "-Xincgc",
+        "-XX:+UseConcMarkSweepGC",
+        "-XX:+UseParNewGC",
+        "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+        "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+        "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+        "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+        "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "launcherJvm11Arguments": [
+        "-XX:+DisableAttachMechanism",
+        "-Drunelite.launcher.nojvm=true",
+        "-Xmx1g",
+        "-Xss2m",
+        "-XX:CompileThreshold=1500",
         "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
         "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
         "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
@@ -20,36 +35,6 @@
         "-Xss2m",
         "-XX:CompileThreshold=1500",
         "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
-    ],
-    "buildCommit": "3e814d456426fa995a6529ac69135a5f6bd22c2d",
-    "launcherJvm11Arguments": [
-        "-XX:+DisableAttachMechanism",
-        "-Drunelite.launcher.nojvm=true",
-        "-Xmx1g",
-        "-Xss2m",
-        "-XX:CompileThreshold=1500",
-        "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
-    ],
-    "dependencyHashes": {
-        "game-0.0.5.jar": "23ad5a44b50bd51c638229343ee9a64941cbff412d2094e6d50b6a0e98e36935"
-    },
-    "launcherJvm17MacArguments": [
-        "-XX:+DisableAttachMechanism",
-        "-Drunelite.launcher.nojvm=true",
-        "-Xmx1g",
-        "-Xss2m",
-        "-XX:CompileThreshold=1500",
-        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
-        "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
         "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
         "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
         "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
@@ -72,84 +57,19 @@
         "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
         "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
     ],
-    "launcherArguments": [
-        "-XX:+DisableAttachMechanism",
-        "-Drunelite.launcher.nojvm=true",
-        "-Xmx1g",
-        "-Xss2m",
-        "-XX:CompileThreshold=1500",
-        "-Xincgc",
-        "-XX:+UseConcMarkSweepGC",
-        "-XX:+UseParNewGC",
-        "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
-    ],
-    "launcherJvm17WindowsArguments": [
-        "-XX:+DisableAttachMechanism",
-        "-Drunelite.launcher.nojvm=true",
-        "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,k_fps32.dll,k_fps64.dll",
-        "-Xmx1g",
-        "-Xss2m",
-        "-XX:CompileThreshold=1500",
-        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
-    ],
-    "minimumLauncherVersion": "1.0.0",
-    "launcherJvm11WindowsArguments": [
-        "-XX:+DisableAttachMechanism",
-        "-Drunelite.launcher.nojvm=true",
-        "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,k_fps32.dll,k_fps64.dll",
-        "-Xmx1g",
-        "-Xss2m",
-        "-XX:CompileThreshold=1500",
-        "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
-    ],
-    "clientJvm9Arguments": [
-        "-XX:+DisableAttachMechanism",
-        "-Xmx1g",
-        "-Xss2m",
-        "-XX:CompileThreshold=1500",
-        "-Dawt.useSystemAAFontSettings=on",
-        "-Dswing.aatext=true",
-        "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
-    ],
-    "clientJvm17MacArguments": [
-        "-XX:+DisableAttachMechanism",
-        "-Xmx1g",
-        "-Xss2m",
-        "-XX:CompileThreshold=1500",
-        "--add-opens=java.desktop/sun.awt=ALL-UNNAMED",
-        "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
-        "-Dawt.useSystemAAFontSettings=on",
-        "-Dswing.aatext=true",
-        "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
-        "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
-        "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
-    ],
-    "projectVersion": "1.0.0",
+    "buildCommit": "3e814d456426fa995a6529ac69135a5f6bd22c2d",
     "artifacts": [
         {
+            "name": "game-0.0.5.jar",
             "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/game-0.0.5.jar",
             "size": 8718358,
-            "name": "game-0.0.5.jar",
-            "hash": "23ad5a44b50bd51c638229343ee9a64941cbff412d2094e6d50b6a0e98e36935"
+            "hash": "df4381146a3a6450511a7b4fdfda2360253b94d06ed365482f2720be94ec8211"
+        }
+    ],
+    "dependencyHashes": [
+        {
+            "first": "game-0.0.5.jar",
+            "second": "df4381146a3a6450511a7b4fdfda2360253b94d06ed365482f2720be94ec8211"
         }
     ]
 }
