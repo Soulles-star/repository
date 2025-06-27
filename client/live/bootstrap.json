@@ -128,14 +128,14 @@
   ],
   "artifacts": [
     {
-      "hash": "5f294b2182c262718f804e6fe8d3572a0ff9f0d1082e90a50a1d875d690a6d55",
+      "hash": "0424a5ed245119de4e390ddd7560b1ef79dfbefbeec76f151a28a2d6721b1b5b",
       "name": "game-0.0.6.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.6.jar",
-      "size": 4065907
+      "size": 4066624
     }
   ],
   "updates": [],
   "dependencyHashes": {
-    "game-0.0.6.jar": "5f294b2182c262718f804e6fe8d3572a0ff9f0d1082e90a50a1d875d690a6d55"
+    "game-0.0.6.jar": "0424a5ed245119de4e390ddd7560b1ef79dfbefbeec76f151a28a2d6721b1b5b"
   }
 }
