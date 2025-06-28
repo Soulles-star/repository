@@ -128,14 +128,135 @@
   ],
   "artifacts": [
     {
-      "hash": "56362bd6f9a453ff93c40186185c90e5968ea6567ba1436bc9397fb5148c09d2",
-      "name": "game-0.0.6.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.6.jar",
-      "size": 4066624
+      "hash": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
+      "name": "commons-text-1.9.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/commons-text-1.9.jar",
+      "size": 216211,
+      "platform": []
+    },
+    {
+      "hash": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
+      "name": "flatlaf-3.6.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/flatlaf-3.6.jar",
+      "size": 925551,
+      "platform": []
+    },
+    {
+      "hash": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
+      "name": "gson-2.9.0.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/gson-2.9.0.jar",
+      "size": 249277,
+      "platform": []
+    },
+    {
+      "hash": "d5be94d65e87bd219fb3193ad1517baa55a3b88fc91d21cf735826ab5af087b9",
+      "name": "guava-31.0.1-jre.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/guava-31.0.1-jre.jar",
+      "size": 2974216,
+      "platform": []
+    },
+    {
+      "hash": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
+      "name": "guice-5.1.0.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/guice-5.1.0.jar",
+      "size": 777563,
+      "platform": []
+    },
+    {
+      "hash": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
+      "name": "javax.inject-1.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/javax.inject-1.jar",
+      "size": 2497,
+      "platform": []
+    },
+    {
+      "hash": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+      "name": "javax.nonnull.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/javax.nonnull.jar",
+      "size": 19936,
+      "platform": []
+    },
+    {
+      "hash": "d440ceb839d6adb5cfa81aa321813d60255e68a3e9ca564c91126599310abde5",
+      "name": "jopt-simple-6.0-alpha-3.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/jopt-simple-6.0-alpha-3.jar",
+      "size": 79368,
+      "platform": []
+    },
+    {
+      "hash": "905721a0eea90a81534abb7ee6ef4ea2e5e645fa1def0a5cd88402df1b46c9ed",
+      "name": "jsr305-1.3.9.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/jsr305-1.3.9.jar",
+      "size": 33015,
+      "platform": []
+    },
+    {
+      "hash": "3160ae988af82c8bf3024ddbe034a82da98bb186fd09e76c50543c5b9da5cc5e",
+      "name": "logback-classic-1.2.10.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/logback-classic-1.2.10.jar",
+      "size": 233809,
+      "platform": []
+    },
+    {
+      "hash": "4a9ef7ed809b1fbc6992bf87d404087c247e7a9766e25bb84377b58ed5c9eb58",
+      "name": "logback-core-1.2.9.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/logback-core-1.2.9.jar",
+      "size": 454201,
+      "platform": []
+    },
+    {
+      "hash": "1e1e427c36ff63c44fd30ef292d9e773ea3154460ab6265d3fed7e6f5bc50fb9",
+      "name": "lombok-1.18.38.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/lombok-1.18.38.jar",
+      "size": 2056090,
+      "platform": []
+    },
+    {
+      "hash": "3624f8474c1af46d75f98bc097d7864a323c81b3808aa43689a6e1c601c027be",
+      "name": "slf4j-api-1.7.32.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/slf4j-api-1.7.32.jar",
+      "size": 41513,
+      "platform": []
+    },
+    {
+      "hash": "0467d25f408428824d5c9c09ec60ee1f0bc341d9bf48971a77fd14939a826c83",
+      "name": "substance-8.0.02.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/substance-8.0.02.jar",
+      "size": 1589195,
+      "platform": []
+    },
+    {
+      "hash": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
+      "name": "synthetica.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/synthetica.jar",
+      "size": 693313,
+      "platform": []
+    },
+    {
+      "hash": "aba4103ac457e232c2eb8e6116b65e42056829bcf6e23eefe464e7c6091a9e75",
+      "name": "syntheticaBlackEye.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/syntheticaBlackEye.jar",
+      "size": 264525,
+      "platform": []
     }
   ],
   "updates": [],
   "dependencyHashes": {
-    "game-0.0.6.jar": "56362bd6f9a453ff93c40186185c90e5968ea6567ba1436bc9397fb5148c09d2"
+    "commons-text-1.9.jar": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
+    "flatlaf-3.6.jar": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
+    "gson-2.9.0.jar": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
+    "guava-31.0.1-jre.jar": "d5be94d65e87bd219fb3193ad1517baa55a3b88fc91d21cf735826ab5af087b9",
+    "guice-5.1.0.jar": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
+    "javax.inject-1.jar": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
+    "javax.nonnull.jar": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+    "jopt-simple-6.0-alpha-3.jar": "d440ceb839d6adb5cfa81aa321813d60255e68a3e9ca564c91126599310abde5",
+    "jsr305-1.3.9.jar": "905721a0eea90a81534abb7ee6ef4ea2e5e645fa1def0a5cd88402df1b46c9ed",
+    "logback-classic-1.2.10.jar": "3160ae988af82c8bf3024ddbe034a82da98bb186fd09e76c50543c5b9da5cc5e",
+    "logback-core-1.2.9.jar": "4a9ef7ed809b1fbc6992bf87d404087c247e7a9766e25bb84377b58ed5c9eb58",
+    "lombok-1.18.38.jar": "1e1e427c36ff63c44fd30ef292d9e773ea3154460ab6265d3fed7e6f5bc50fb9",
+    "slf4j-api-1.7.32.jar": "3624f8474c1af46d75f98bc097d7864a323c81b3808aa43689a6e1c601c027be",
+    "substance-8.0.02.jar": "0467d25f408428824d5c9c09ec60ee1f0bc341d9bf48971a77fd14939a826c83",
+    "synthetica.jar": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
+    "syntheticaBlackEye.jar": "aba4103ac457e232c2eb8e6116b65e42056829bcf6e23eefe464e7c6091a9e75"
   }
 }
