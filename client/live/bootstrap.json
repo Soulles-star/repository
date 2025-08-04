@@ -2,7 +2,7 @@
   "launcherArguments": [
     "-XX:+DisableAttachMechanism",
     "-Drunelite.launcher.nojvm\u003dtrue",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "-Xincgc",
@@ -17,7 +17,7 @@
   "launcherJvm11Arguments": [
     "-XX:+DisableAttachMechanism",
     "-Drunelite.launcher.nojvm\u003dtrue",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
@@ -30,7 +30,7 @@
     "-XX:+DisableAttachMechanism",
     "-Drunelite.launcher.nojvm\u003dtrue",
     "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
@@ -54,7 +54,7 @@
   "launcherJvm17MacArguments": [
     "-XX:+DisableAttachMechanism",
     "-Drunelite.launcher.nojvm\u003dtrue",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/com.apple.eawt\u003dALL-UNNAMED",
@@ -68,7 +68,7 @@
     "-XX:+DisableAttachMechanism",
     "-Drunelite.launcher.nojvm\u003dtrue",
     "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
@@ -79,7 +79,7 @@
   ],
   "clientJvmArguments": [
     "-XX:+DisableAttachMechanism",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "-Xincgc",
@@ -94,7 +94,7 @@
   "clientJvm9Arguments": [
     "-XX:+DisableAttachMechanism",
     "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
@@ -105,7 +105,7 @@
   ],
   "clientJvm17MacArguments": [
     "-XX:+DisableAttachMechanism",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/com.apple.eawt\u003dALL-UNNAMED",
@@ -117,7 +117,7 @@
   ],
   "clientJvm17Arguments": [
     "-XX:+DisableAttachMechanism",
-    "-Xmx1024m",
+    "-Xmx2048m",
     "-Xss2m",
     "-XX:CompileThreshold\u003d1500",
     "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
@@ -163,10 +163,10 @@
       "platform": []
     },
     {
-      "hash": "7491dbb28ebc5a621b31d2a8ac5f1b5bcd91a9fd9a779ffc4223562737cb4b03",
+      "hash": "7af4af40abd7f552a7af16bd78c445ecb032c649b1b6c5813eebc41006d2fd88",
       "name": "game-0.0.7.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.7.jar",
-      "size": 6282115,
+      "size": 6282268,
       "platform": []
     },
     {
@@ -311,7 +311,7 @@
     "commons-lang3-3.0.jar": "980ef14cb0468c7080f88a72fab73f9c89c029217f3c8c535b0672570e32cc08",
     "commons-text-1.9.jar": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
     "flatlaf-3.6.jar": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
-    "game-0.0.7.jar": "7491dbb28ebc5a621b31d2a8ac5f1b5bcd91a9fd9a779ffc4223562737cb4b03",
+    "game-0.0.7.jar": "7af4af40abd7f552a7af16bd78c445ecb032c649b1b6c5813eebc41006d2fd88",
     "gson-2.9.0.jar": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
     "guice-5.1.0.jar": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
     "javax.inject-1.jar": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
