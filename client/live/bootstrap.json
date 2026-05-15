@@ -1,139 +1,139 @@
 {
   "launcherArguments": [
     "-XX:+DisableAttachMechanism",
-    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Drunelite.launcher.nojvm=true",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
+    "-XX:CompileThreshold=1500",
     "-Xincgc",
     "-XX:+UseConcMarkSweepGC",
     "-XX:+UseParNewGC",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "launcherJvm11Arguments": [
     "-XX:+DisableAttachMechanism",
-    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Drunelite.launcher.nojvm=true",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "-XX:CompileThreshold=1500",
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "launcherJvm11WindowsArguments": [
     "-XX:+DisableAttachMechanism",
-    "-Drunelite.launcher.nojvm\u003dtrue",
-    "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
-    "-Dsun.java2d.d3d\u003dfalse",
-    "-Dsun.java2d.noddraw\u003dtrue",
-    "-Dsun.java2d.opengl\u003dfalse",
+    "-Drunelite.launcher.nojvm=true",
+    "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
+    "-Dsun.java2d.d3d=false",
+    "-Dsun.java2d.noddraw=true",
+    "-Dsun.java2d.opengl=false",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "-XX:CompileThreshold=1500",
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "launcherJvm17Arguments": [
     "-XX:+DisableAttachMechanism",
-    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Drunelite.launcher.nojvm=true",
     "-Xmx1024m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "-XX:CompileThreshold=1500",
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "launcherJvm17MacArguments": [
     "-XX:+DisableAttachMechanism",
-    "-Drunelite.launcher.nojvm\u003dtrue",
+    "-Drunelite.launcher.nojvm=true",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/com.apple.eawt\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "-XX:CompileThreshold=1500",
+    "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "launcherJvm17WindowsArguments": [
     "-XX:+DisableAttachMechanism",
-    "-Drunelite.launcher.nojvm\u003dtrue",
-    "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
-    "-Dsun.java2d.d3d\u003dfalse",
-    "-Dsun.java2d.noddraw\u003dtrue",
-    "-Dsun.java2d.opengl\u003dfalse",
+    "-Drunelite.launcher.nojvm=true",
+    "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
+    "-Dsun.java2d.d3d=false",
+    "-Dsun.java2d.noddraw=true",
+    "-Dsun.java2d.opengl=false",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "-XX:CompileThreshold=1500",
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "clientJvmArguments": [
     "-XX:+DisableAttachMechanism",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
+    "-XX:CompileThreshold=1500",
     "-Xincgc",
     "-XX:+UseConcMarkSweepGC",
     "-XX:+UseParNewGC",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "clientJvm9Arguments": [
     "-XX:+DisableAttachMechanism",
-    "-Drunelite.launcher.blacklistedDlls\u003dRTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
-    "-Dsun.java2d.d3d\u003dfalse",
-    "-Dsun.java2d.noddraw\u003dtrue",
-    "-Dsun.java2d.opengl\u003dfalse",
+    "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
+    "-Dsun.java2d.d3d=false",
+    "-Dsun.java2d.noddraw=true",
+    "-Dsun.java2d.opengl=false",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "-XX:CompileThreshold=1500",
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "clientJvm17MacArguments": [
     "-XX:+DisableAttachMechanism",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/com.apple.eawt\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "-XX:CompileThreshold=1500",
+    "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "clientJvm17Arguments": [
     "-XX:+DisableAttachMechanism",
     "-Xmx2048m",
     "-Xss2m",
-    "-XX:CompileThreshold\u003d1500",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.plaf.synth\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/sun.swing.table\u003dALL-UNNAMED",
-    "--add-opens\u003djava.desktop/javax.swing.plaf.basic\u003dALL-UNNAMED"
+    "-XX:CompileThreshold=1500",
+    "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+    "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+    "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "artifacts": [
     {
@@ -172,10 +172,10 @@
       "platform": []
     },
     {
-      "hash": "b35b54bea7aa161448dfeda641e895beb2483c2209ea7d7c0c010a9a8654989e",
+      "hash": "f6183b960be360b1db1ad79e96fcb1d539a6d595c9857e48040de076d425299f",
       "name": "game-0.0.8.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.8.jar",
-      "size": 7250118,
+      "size": 267286629,
       "platform": []
     },
     {
@@ -280,109 +280,109 @@
       "hash": "99f491e86262ce38d13b3581d40f77acdb4696a9505447c3154474c3192908dd",
       "name": "guava-33.2.0-jre.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/guava/guava/33.2.0-jre/guava-33.2.0-jre.jar",
-      "size": 3054490
+      "size": 3054490.0
     },
     {
       "hash": "5062da750e5f7ec89e27e8b67b7d40fa8c4b16890159e35f828116ce6c8eca1e",
       "name": "lwjgl-opengl-3.3.3.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3.jar",
-      "size": 929192
+      "size": 929192.0
     },
     {
       "hash": "f45e5f60596b03b2e3d8b98a123c855ebd0b5154c8155dc2a56b890ccc907477",
       "name": "lwjgl-opengl-3.3.3-natives-windows.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-windows.jar",
-      "size": 101535
+      "size": 101535.0
     },
     {
       "hash": "d823a92c6a2810b5112da304dcc6abcd4cb102706f74f7e934a223cea2051250",
       "name": "lwjgl-opengl-3.3.3-natives-linux.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-linux.jar",
-      "size": 80463
+      "size": 80463.0
     },
     {
       "hash": "4c1073d0e5ae99966d0ef1d6a7795758476d247d930fdc5ec1865e38cb847cce",
       "name": "lwjgl-opengl-3.3.3-natives-macos.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-macos.jar",
-      "size": 41484
+      "size": 41484.0
     },
     {
       "hash": "bedc757fd2b1b255146db26b74b9cbd1fcf5644b89b47b104fa721c741604259",
       "name": "lwjgl-glfw-3.3.3.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3.jar",
-      "size": 135546
+      "size": 135546.0
     },
     {
       "hash": "98155b451dfc6f585089dec77a12f9c05789c4dceb8da472f9d308160101a70d",
       "name": "lwjgl-glfw-3.3.3-natives-windows.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-windows.jar",
-      "size": 166368
+      "size": 166368.0
     },
     {
       "hash": "b8306062b17741f34269088751421f1ac21a597bfbbd0c6c61226301cde744b8",
       "name": "lwjgl-glfw-3.3.3-natives-linux.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-linux.jar",
-      "size": 118478
+      "size": 118478.0
     },
     {
       "hash": "a89b55362aec9e5a3bbd1364601bb85b147db6bae68891ca9a232d6cfb2d55ec",
       "name": "lwjgl-glfw-3.3.3-natives-macos.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-macos.jar",
-      "size": 140884
+      "size": 140884.0
     },
     {
       "hash": "dc9c7b2d48e8396d68895f8902ffa01e46253de44dfe927533ff09457ebfeec4",
       "name": "lwjgl-3.3.3.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3.jar",
-      "size": 785029
+      "size": 785029.0
     },
     {
       "hash": "5ee63a19187efe5bb8747fd24f7b13257db348df5ad641113a3695e43f213959",
       "name": "lwjgl-3.3.3-natives-windows.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-windows.jar",
-      "size": 165442
+      "size": 165442.0
     },
     {
       "hash": "e663738c519a06f6d659882fa8e4e09af7f10e921929ee5cc54a7587f62ed4c9",
       "name": "lwjgl-3.3.3-natives-linux.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-linux.jar",
-      "size": 114627
+      "size": 114627.0
     },
     {
       "hash": "0294ee4e2dd7ef6befaffafc0bb99a2a89b76070b5cd8302f3d75624b6786d03",
       "name": "lwjgl-3.3.3-natives-macos.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-macos.jar",
-      "size": 60543
+      "size": 60543.0
     },
     {
       "hash": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064",
       "name": "failureaccess-1.0.2.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar",
-      "size": 4740
+      "size": 4740.0
     },
     {
       "hash": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
       "name": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-      "size": 2199
+      "size": 2199.0
     },
     {
       "hash": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
       "name": "jsr305-3.0.2.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-      "size": 19936
+      "size": 19936.0
     },
     {
       "hash": "ccaedd33af0b7894d9f2f3b644f4d19e43928e32902e61ac4d10777830f5aac7",
       "name": "checker-qual-3.42.0.jar",
       "path": "https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
-      "size": 230830
+      "size": 230830.0
     },
     {
       "hash": "de25f2d9a2156529bd765f51d8efdfc0dfa7301e04efb9cc75b7f10cf5d0e0fb",
       "name": "error_prone_annotations-2.26.1.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar",
-      "size": 19373
+      "size": 19373.0
     }
   ],
   "updates": [],
@@ -392,7 +392,7 @@
     "commons-lang3-3.0.jar": "980ef14cb0468c7080f88a72fab73f9c89c029217f3c8c535b0672570e32cc08",
     "commons-text-1.9.jar": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
     "flatlaf-3.6.jar": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
-    "game-0.0.8.jar": "b35b54bea7aa161448dfeda641e895beb2483c2209ea7d7c0c010a9a8654989e",
+    "game-0.0.8.jar": "f6183b960be360b1db1ad79e96fcb1d539a6d595c9857e48040de076d425299f",
     "gson-2.9.0.jar": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
     "guice-5.1.0.jar": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
     "javax.inject-1.jar": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
