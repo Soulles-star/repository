@@ -199,10 +199,10 @@
       "platform": []
     },
     {
-      "hash": "0cd60ff0473481e6a4ea25faf5361347e8c53f98f230b04334ee40bef3e5d54f",
+      "hash": "7451287a20840d7dd4a974fe1742c9a8e3bc598069ac0997b88a3b78b5714dc0",
       "name": "game-0.0.8.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.8.jar",
-      "size": 10180238,
+      "size": 10180488,
       "platform": []
     },
     {
@@ -310,78 +310,6 @@
       "size": 3054490.0
     },
     {
-      "hash": "5062da750e5f7ec89e27e8b67b7d40fa8c4b16890159e35f828116ce6c8eca1e",
-      "name": "lwjgl-opengl-3.3.3.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3.jar",
-      "size": 929192.0
-    },
-    {
-      "hash": "f45e5f60596b03b2e3d8b98a123c855ebd0b5154c8155dc2a56b890ccc907477",
-      "name": "lwjgl-opengl-3.3.3-natives-windows.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-windows.jar",
-      "size": 101535.0
-    },
-    {
-      "hash": "d823a92c6a2810b5112da304dcc6abcd4cb102706f74f7e934a223cea2051250",
-      "name": "lwjgl-opengl-3.3.3-natives-linux.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-linux.jar",
-      "size": 80463.0
-    },
-    {
-      "hash": "4c1073d0e5ae99966d0ef1d6a7795758476d247d930fdc5ec1865e38cb847cce",
-      "name": "lwjgl-opengl-3.3.3-natives-macos.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-macos.jar",
-      "size": 41484.0
-    },
-    {
-      "hash": "bedc757fd2b1b255146db26b74b9cbd1fcf5644b89b47b104fa721c741604259",
-      "name": "lwjgl-glfw-3.3.3.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3.jar",
-      "size": 135546.0
-    },
-    {
-      "hash": "98155b451dfc6f585089dec77a12f9c05789c4dceb8da472f9d308160101a70d",
-      "name": "lwjgl-glfw-3.3.3-natives-windows.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-windows.jar",
-      "size": 166368.0
-    },
-    {
-      "hash": "b8306062b17741f34269088751421f1ac21a597bfbbd0c6c61226301cde744b8",
-      "name": "lwjgl-glfw-3.3.3-natives-linux.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-linux.jar",
-      "size": 118478.0
-    },
-    {
-      "hash": "a89b55362aec9e5a3bbd1364601bb85b147db6bae68891ca9a232d6cfb2d55ec",
-      "name": "lwjgl-glfw-3.3.3-natives-macos.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-macos.jar",
-      "size": 140884.0
-    },
-    {
-      "hash": "dc9c7b2d48e8396d68895f8902ffa01e46253de44dfe927533ff09457ebfeec4",
-      "name": "lwjgl-3.3.3.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3.jar",
-      "size": 785029.0
-    },
-    {
-      "hash": "5ee63a19187efe5bb8747fd24f7b13257db348df5ad641113a3695e43f213959",
-      "name": "lwjgl-3.3.3-natives-windows.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-windows.jar",
-      "size": 165442.0
-    },
-    {
-      "hash": "e663738c519a06f6d659882fa8e4e09af7f10e921929ee5cc54a7587f62ed4c9",
-      "name": "lwjgl-3.3.3-natives-linux.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-linux.jar",
-      "size": 114627.0
-    },
-    {
-      "hash": "0294ee4e2dd7ef6befaffafc0bb99a2a89b76070b5cd8302f3d75624b6786d03",
-      "name": "lwjgl-3.3.3-natives-macos.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-macos.jar",
-      "size": 60543.0
-    },
-    {
       "hash": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064",
       "name": "failureaccess-1.0.2.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar",
@@ -410,6 +338,126 @@
       "name": "error_prone_annotations-2.26.1.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar",
       "size": 19373.0
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5.jar",
+      "hash": "7571d38667a97b557e373821990a09d60772b139351932a37cee286aca7d8d8c",
+      "size": 935338
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-windows.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-windows.jar",
+      "hash": "59895775a73e212c7e77036a6ba5ca0879cffbbffc1e3a61a2e19b12cd7c1d0b",
+      "size": 97529
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-linux.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-linux.jar",
+      "hash": "c5fbde28703f8cb18c26eb46d9ea6a10b3f7256292cefaf330acbbd6089af7c7",
+      "size": 80465
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-macos.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-macos.jar",
+      "hash": "84f48c9e441eb18538506b80c04fe88b389c0caa6ab86124a19a0d1eccb906f1",
+      "size": 53874
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-macos-arm64.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-macos-arm64.jar",
+      "hash": "eba5f4a24877ba0c1f06a4b992bdf4394c70c56fa2b529ee5328733bc60fcb4c",
+      "size": 42551
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-windows-x86.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-windows-x86.jar",
+      "hash": "13ac0c06bdd89ed51524e9a75b5884b04a18fa5c77bd2a90b986fc6f27e31a5c",
+      "size": 89195
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5.jar",
+      "hash": "c321c8f1cee76ef91168d33e788a56e0f7db649dfa4df5000f2480ad367de872",
+      "size": 148076
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-windows.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-windows.jar",
+      "hash": "c221e4b20527e8ba9949963fd51374291690996dffaca24fa7fe6ca93c6d780c",
+      "size": 167787
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-linux.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-linux.jar",
+      "hash": "062b439ffcfb266f600e72a44fd57631ff86d3a1237f359bb81e3d85f7002816",
+      "size": 128088
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-macos.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-macos.jar",
+      "hash": "7f56e58a7305c4285feb7c81b6e6e662e64d8a771e74a6ed13a44eb7cf3934f2",
+      "size": 151490
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-macos-arm64.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-macos-arm64.jar",
+      "hash": "05ce6431e08b2ec5a36d44a78ade5148f8bdf80deb73dd206e8b1f78405feaa0",
+      "size": 146091
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-windows-x86.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-windows-x86.jar",
+      "hash": "af23a5a0125cfe978f6985dd577c15710290e4e13989714f59fdd804ed6a3f87",
+      "size": 162551
+    },
+    {
+      "name": "lwjgl-jawt-3.3.5.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-jawt/3.3.5/lwjgl-jawt-3.3.5.jar",
+      "hash": "e3e754d449d86257b647d7501b986428dbf20877e29e27f99119754efc9184c6",
+      "size": 24830
+    },
+    {
+      "name": "lwjgl-3.3.5.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5.jar",
+      "hash": "a115fe16c6f6e74af2fcd872dfebd710a1e588d72377523918034ec6a2340214",
+      "size": 823244
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-windows.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-windows.jar",
+      "hash": "e88d5fc6dde25bf59e6e512eee65a5267a74c87ae2eb6ac3beb1b2f39ad0a170",
+      "size": 164070
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-linux.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-linux.jar",
+      "hash": "a9b97025fbc3522c55454af03adf25dd28890925434613286c1cc928bf4a4acc",
+      "size": 121299
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-macos.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-macos.jar",
+      "hash": "19c6bb6b56ce90b886ac0c38b19a6b3abda8396f9c72524f2815d08ee87db499",
+      "size": 75212
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-macos-arm64.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-macos-arm64.jar",
+      "hash": "04e0a5032b4454b4e5441d9ba4058a6d7157c17a60db81e074cc4c8ae64b7d73",
+      "size": 50370
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-windows-x86.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-windows-x86.jar",
+      "hash": "977559d9dc606d22d5fdb4576b28c86ca2616c456a978d290a0633de5679a696",
+      "size": 148472
+    },
+    {
+      "name": "lwjgl3-awt-0.2.3.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/lwjglx/lwjgl3-awt/0.2.3/lwjgl3-awt-0.2.3.jar",
+      "hash": "abe1a021b282a01c4d00b53a07ffff946cfa85472ed1e11300a083c35f34572a",
+      "size": 62242
     }
   ],
   "updates": [],
@@ -419,7 +467,7 @@
     "commons-lang3-3.0.jar": "980ef14cb0468c7080f88a72fab73f9c89c029217f3c8c535b0672570e32cc08",
     "commons-text-1.9.jar": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
     "flatlaf-3.6.jar": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
-    "game-0.0.8.jar": "0cd60ff0473481e6a4ea25faf5361347e8c53f98f230b04334ee40bef3e5d54f",
+    "game-0.0.8.jar": "7451287a20840d7dd4a974fe1742c9a8e3bc598069ac0997b88a3b78b5714dc0",
     "gson-2.9.0.jar": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
     "guice-5.1.0.jar": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
     "javax.inject-1.jar": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
