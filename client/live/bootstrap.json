@@ -199,10 +199,10 @@
       "platform": []
     },
     {
-      "hash": "416d2a9fbbb8489dde194b75b1f78682aceb25913274bced37c2cf8cde1a023d",
+      "hash": "383ff53454b0155f1807184d848a5ed1771a7005935b5e9fec9dffe3b9be4c88",
       "name": "game-0.0.8.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.8.jar",
-      "size": 10186940,
+      "size": 10187239,
       "platform": []
     },
     {
@@ -467,7 +467,7 @@
     "commons-lang3-3.0.jar": "980ef14cb0468c7080f88a72fab73f9c89c029217f3c8c535b0672570e32cc08",
     "commons-text-1.9.jar": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
     "flatlaf-3.6.jar": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
-    "game-0.0.8.jar": "416d2a9fbbb8489dde194b75b1f78682aceb25913274bced37c2cf8cde1a023d",
+    "game-0.0.8.jar": "383ff53454b0155f1807184d848a5ed1771a7005935b5e9fec9dffe3b9be4c88",
     "gson-2.9.0.jar": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
     "guice-5.1.0.jar": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
     "javax.inject-1.jar": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
