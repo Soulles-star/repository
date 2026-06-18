@@ -199,10 +199,10 @@
       "platform": []
     },
     {
-      "hash": "b2e70a2c8b74b0c74bfa7d73a17cd93db168dc737bf25049510cbc6432ed01cc",
+      "hash": "670bfc5f71269d4380b791890d2cb411319ad2e9dca9db835f8cbe691d6b340a",
       "name": "game-0.0.8.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.8.jar",
-      "size": 10195326,
+      "size": 10211952,
       "platform": []
     },
     {
@@ -454,6 +454,54 @@
       "size": 148472
     },
     {
+      "name": "gluegen-rt-2.6.0.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/jogamp/gluegen/gluegen-rt/2.6.0/gluegen-rt-2.6.0.jar",
+      "hash": "465bbc8d410b872a76b5b901cdb9c2c07905edd5e61a7120dc6a4d007880ec2f",
+      "size": 411363
+    },
+    {
+      "name": "gluegen-rt-2.6.0-natives-windows-amd64.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/jogamp/gluegen/gluegen-rt/2.6.0/gluegen-rt-2.6.0-natives-windows-amd64.jar",
+      "hash": "c7c9138606858fed0b1650a2444cc1bc96599cc635a8d879979a37646e8594b1",
+      "size": 23010
+    },
+    {
+      "name": "gluegen-rt-2.6.0-natives-linux-amd64.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/jogamp/gluegen/gluegen-rt/2.6.0/gluegen-rt-2.6.0-natives-linux-amd64.jar",
+      "hash": "d500a38dedcbd6dfa89c5ae943a22d1051b1dbf1502f8544337bbe57d118f2c5",
+      "size": 5590
+    },
+    {
+      "name": "gluegen-rt-2.6.0-natives-macosx-universal.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/jogamp/gluegen/gluegen-rt/2.6.0/gluegen-rt-2.6.0-natives-macosx-universal.jar",
+      "hash": "e543d5e81bc8b8f63e5dc365ac47da009f82175b2c6eba16a24ce3b2eb031773",
+      "size": 9734
+    },
+    {
+      "name": "jogl-all-2.6.0.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/jogamp/jogl/jogl-all/2.6.0/jogl-all-2.6.0.jar",
+      "hash": "34c919bc6073c2d9e73cbe7558c4e9de6b5c58146f3658e2bcc5f23ec3fccc9f",
+      "size": 3991187
+    },
+    {
+      "name": "jogl-all-2.6.0-natives-windows-amd64.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/jogamp/jogl/jogl-all/2.6.0/jogl-all-2.6.0-natives-windows-amd64.jar",
+      "hash": "33081ebfac520d7d283830a614f458f728104bef4eff56b52f604ee8c5af90c8",
+      "size": 294752
+    },
+    {
+      "name": "jogl-all-2.6.0-natives-linux-amd64.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/jogamp/jogl/jogl-all/2.6.0/jogl-all-2.6.0-natives-linux-amd64.jar",
+      "hash": "3d0ed2674059fc207166ce1351de8d30e0b6102af12ca8b84fbf1bc3f246038a",
+      "size": 268724
+    },
+    {
+      "name": "jogl-all-2.6.0-natives-macosx-universal.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/jogamp/jogl/jogl-all/2.6.0/jogl-all-2.6.0-natives-macosx-universal.jar",
+      "hash": "81db6a2b50f3803d4307a8bd7570a4f78c41ae0d44361208d0885a5cdf289dfa",
+      "size": 583638
+    },
+    {
       "name": "lwjgl3-awt-0.2.3.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjglx/lwjgl3-awt/0.2.3/lwjgl3-awt-0.2.3.jar",
       "hash": "abe1a021b282a01c4d00b53a07ffff946cfa85472ed1e11300a083c35f34572a",
@@ -467,7 +515,7 @@
     "commons-lang3-3.0.jar": "980ef14cb0468c7080f88a72fab73f9c89c029217f3c8c535b0672570e32cc08",
     "commons-text-1.9.jar": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
     "flatlaf-3.6.jar": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
-    "game-0.0.8.jar": "b2e70a2c8b74b0c74bfa7d73a17cd93db168dc737bf25049510cbc6432ed01cc",
+    "game-0.0.8.jar": "670bfc5f71269d4380b791890d2cb411319ad2e9dca9db835f8cbe691d6b340a",
     "gson-2.9.0.jar": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
     "guice-5.1.0.jar": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
     "javax.inject-1.jar": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
