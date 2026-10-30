@@ -307,37 +307,37 @@
       "hash": "99f491e86262ce38d13b3581d40f77acdb4696a9505447c3154474c3192908dd",
       "name": "guava-33.2.0-jre.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/guava/guava/33.2.0-jre/guava-33.2.0-jre.jar",
-      "size": 3054490.0
+      "size": 3054490
     },
     {
       "hash": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064",
       "name": "failureaccess-1.0.2.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar",
-      "size": 4740.0
+      "size": 4740
     },
     {
       "hash": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
       "name": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-      "size": 2199.0
+      "size": 2199
     },
     {
       "hash": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
       "name": "jsr305-3.0.2.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-      "size": 19936.0
+      "size": 19936
     },
     {
       "hash": "ccaedd33af0b7894d9f2f3b644f4d19e43928e32902e61ac4d10777830f5aac7",
       "name": "checker-qual-3.42.0.jar",
       "path": "https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
-      "size": 230830.0
+      "size": 230830
     },
     {
       "hash": "de25f2d9a2156529bd765f51d8efdfc0dfa7301e04efb9cc75b7f10cf5d0e0fb",
       "name": "error_prone_annotations-2.26.1.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar",
-      "size": 19373.0
+      "size": 19373
     },
     {
       "name": "lwjgl-opengl-3.3.5.jar",
@@ -508,7 +508,18 @@
       "size": 62242
     }
   ],
-  "updates": [],
+  "updates": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "name": "Eldritch launcher 1.2.0",
+      "version": "1.2.0",
+      "url": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/EldritchSetup-1.2.0.exe",
+      "hash": "88f0c09325af4b35355907af9359cb9093c2d57d19c8e148549b7ee2f683a1e1",
+      "size": 44260190,
+      "rollout": 0
+    }
+  ],
   "dependencyHashes": {
     "aopalliance-1.0.jar": "0addec670fedcd3f113c5c8091d783280d23f75e3acb841b61a9cdb079376a08",
     "commons-csv-1.9.0.jar": "c418d6aab4db4f1f70983d355de8d7c1e755c754820a92294da2e5f5081022cc",
