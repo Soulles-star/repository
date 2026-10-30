@@ -512,11 +512,11 @@
     {
       "os": "windows",
       "arch": "amd64",
-      "name": "Eldritch launcher 1.2.0",
-      "version": "1.2.0",
-      "url": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/EldritchSetup-1.2.0.exe",
-      "hash": "88f0c09325af4b35355907af9359cb9093c2d57d19c8e148549b7ee2f683a1e1",
-      "size": 44260190,
+      "name": "Eldritch launcher 1.2.1",
+      "version": "1.2.1",
+      "url": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/EldritchSetup-1.2.1.exe",
+      "hash": "9ba29e2cfbfc1601a2af77549961ec2b46295f5c54d275655f4e14d14e1b500e",
+      "size": 44259483,
       "rollout": 0
     }
   ],
