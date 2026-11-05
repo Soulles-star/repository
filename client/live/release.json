@@ -1,0 +1,708 @@
+{
+  "format": 1,
+  "id": "20261106-001842-362648bf",
+  "version": "0.0.8",
+  "commit": "362648bfcaf65d5ed42e80ff0eac642632264900",
+  "branch": "feat/mounts",
+  "subject": "Prayer book client: null-safe sprites, refill only for its own answer, cell clip",
+  "dirty": false,
+  "dirtyFiles": [],
+  "builtAt": "2026-11-05T23:18:42.943Z",
+  "builtWith": "stageClientRelease, Java 24.0.2",
+  "features": [
+    "cache-pipeline-phase1"
+  ],
+  "checks": [
+    "OK Java 11.0.30 with the release's clientJvm9Arguments: OK: 3524/3524 game classes load; 31591 class and 4325 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack",
+    "OK Java 17.0.18 with the release's clientJvm17(Windows)Arguments: OK: 3524/3524 game classes load; 31591 class and 4325 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack"
+  ],
+  "excluded": [
+    "commons-lang3-3.0.jar: other version of commons-lang3-3.14.0.jar (Gradle resolves org.apache.commons:commons-lang3:3.14.0; one version per library)",
+    "jsr305-1.3.9.jar: other version of jsr305-3.0.2.jar (Gradle resolves com.google.code.findbugs:jsr305:3.0.2; one version per library)",
+    "javax.nonnull.jar: the very same file as jsr305-3.0.2.jar",
+    "lombok-1.18.38.jar: compile-time only (nothing in the game jar uses its classes)"
+  ],
+  "warnings": [
+    "fileStore.jar and rs-cache-library-7.2.0.jar both contain 3 class(es) (e.g. org/apache/tools/bzip2/BZip2Constants.class); fileStore.jar wins (earlier on the classpath)",
+    "game-0.0.8.jar and synthetica.jar both contain 32 class(es) (e.g. de/javasoft/plaf/synthetica/SyntheticaLookAndFeel$1$1.class); game-0.0.8.jar wins (earlier on the classpath)"
+  ],
+  "jars": [
+    {
+      "name": "game-0.0.8.jar",
+      "size": 50538461,
+      "sha256": "2e2bf40297747d6da7db572069dc4bbe6facffddfc4a55499cba554a736e4b74",
+      "sha1": "620789bb0b1b6ac45bbdfa83a958f5a11691dd21",
+      "source": "client"
+    },
+    {
+      "name": "aopalliance-1.0.jar",
+      "size": 4467,
+      "sha256": "0addec670fedcd3f113c5c8091d783280d23f75e3acb841b61a9cdb079376a08",
+      "sha1": "0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8",
+      "source": "libs"
+    },
+    {
+      "name": "commons-csv-1.9.0.jar",
+      "size": 51322,
+      "sha256": "c418d6aab4db4f1f70983d355de8d7c1e755c754820a92294da2e5f5081022cc",
+      "sha1": "b59d8f64cd0b83ee1c04ff1748de2504457018c1",
+      "source": "libs"
+    },
+    {
+      "name": "commons-text-1.9.jar",
+      "size": 216211,
+      "sha256": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
+      "sha1": "ba6ac8c2807490944a0a27f6f8e68fb5ed2e80e2",
+      "source": "libs"
+    },
+    {
+      "name": "fileStore.jar",
+      "size": 66553,
+      "sha256": "eb95319edd91e2fc29c60df0507cdb342cc72645f98cad7894822e0b53a56f94",
+      "sha1": "3e81f764f480043e7a95b207b7b2ac95f012320b",
+      "source": "libs"
+    },
+    {
+      "name": "flatlaf-3.6.jar",
+      "size": 925551,
+      "sha256": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
+      "sha1": "049f388b57537c286b466dee84a6d01ba57a59e9",
+      "source": "libs"
+    },
+    {
+      "name": "gson-2.9.0.jar",
+      "size": 249277,
+      "sha256": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
+      "sha1": "8a1167e089096758b49f9b34066ef98b2f4b37aa",
+      "source": "libs"
+    },
+    {
+      "name": "guice-5.1.0.jar",
+      "size": 777563,
+      "sha256": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
+      "sha1": "da25056c694c54ba16e78e4fc35f17fc60f0d1b4",
+      "source": "libs"
+    },
+    {
+      "name": "javax.inject-1.jar",
+      "size": 2497,
+      "sha256": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
+      "sha1": "6975da39a7040257bd51d21a231b76c915872d38",
+      "source": "libs"
+    },
+    {
+      "name": "jopt-simple-6.0-alpha-3.jar",
+      "size": 79368,
+      "sha256": "d440ceb839d6adb5cfa81aa321813d60255e68a3e9ca564c91126599310abde5",
+      "sha1": "02ab1a73e1e22d2b73469362a0908a98644b681d",
+      "source": "libs"
+    },
+    {
+      "name": "logback-classic-1.2.10.jar",
+      "size": 233809,
+      "sha256": "3160ae988af82c8bf3024ddbe034a82da98bb186fd09e76c50543c5b9da5cc5e",
+      "sha1": "f69d97ef3335c6ab82fc21dfb77ac613f90c1221",
+      "source": "libs"
+    },
+    {
+      "name": "logback-core-1.2.10.jar",
+      "size": 454203,
+      "sha256": "ba51a3fe56691f9dd7fe742e4a73c3ab4aaaa32202c73409ba56f18687399a08",
+      "sha1": "5328406bfcae7bcdcc86810fcb2920d2c297170d",
+      "source": "libs"
+    },
+    {
+      "name": "rs-cache-library-7.2.0.jar",
+      "size": 4231168,
+      "sha256": "4042238b00f02c339a9288bdd4a3b8f0f4e8e8765ff5921b4fe8b29d194c142a",
+      "sha1": "0c03707d555073db352ec41c31aa7117952a7944",
+      "source": "libs"
+    },
+    {
+      "name": "slf4j-api-1.7.32.jar",
+      "size": 41513,
+      "sha256": "3624f8474c1af46d75f98bc097d7864a323c81b3808aa43689a6e1c601c027be",
+      "sha1": "cdcff33940d9f2de763bc41ea05a0be5941176c3",
+      "source": "libs"
+    },
+    {
+      "name": "substance-8.0.02.jar",
+      "size": 1589195,
+      "sha256": "0467d25f408428824d5c9c09ec60ee1f0bc341d9bf48971a77fd14939a826c83",
+      "sha1": "7af2c3e2156d193c279d1989a09e59fd728b3341",
+      "source": "libs"
+    },
+    {
+      "name": "synthetica.jar",
+      "size": 693313,
+      "sha256": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
+      "sha1": "488a9bb52b487bee5427058f01a2020a7a1874c7",
+      "source": "libs"
+    },
+    {
+      "name": "syntheticaBlackEye.jar",
+      "size": 264525,
+      "sha256": "aba4103ac457e232c2eb8e6116b65e42056829bcf6e23eefe464e7c6091a9e75",
+      "sha1": "82dd30937da13fa06080bcb72cea61b7727c45c4",
+      "source": "libs"
+    },
+    {
+      "name": "trident-1.5.00.jar",
+      "size": 79726,
+      "sha256": "3214e1c23d549d5d67c91da4da1ef33c5248470bb824f91cbe8f9e0beea59eef",
+      "sha1": "e8e2efc9ae40ede3f19f4f78ab768125abdd1378",
+      "source": "libs"
+    },
+    {
+      "name": "guava-33.2.0-jre.jar",
+      "size": 3054490,
+      "sha256": "99f491e86262ce38d13b3581d40f77acdb4696a9505447c3154474c3192908dd",
+      "sha1": "e264781dadc4967e5292f3c4d05f1d153631f7b4",
+      "source": "maven",
+      "maven": "com.google.guava:guava:33.2.0-jre"
+    },
+    {
+      "name": "commons-compress-1.26.2.jar",
+      "size": 1083634,
+      "sha256": "9168a03141d8fc7eda21a2360d83cc0412bcbb1d6204d992bd48c2573cb3c6b8",
+      "sha1": "eb1f823447af685208e684fce84783b43517960c",
+      "source": "maven",
+      "maven": "org.apache.commons:commons-compress:1.26.2"
+    },
+    {
+      "name": "xz-1.9.jar",
+      "size": 116013,
+      "sha256": "211b306cfc44f8f96df3a0a3ddaf75ba8c5289eed77d60d72f889bb855f535e5",
+      "sha1": "1ea4bec1a921180164852c65006d928617bd2caf",
+      "source": "maven",
+      "maven": "org.tukaani:xz:1.9"
+    },
+    {
+      "name": "json-20240303.jar",
+      "size": 78332,
+      "sha256": "3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed",
+      "sha1": "0ebb88e8fb5122b7506d5cf1d69f1ccdb790d22a",
+      "source": "maven",
+      "maven": "org.json:json:20240303"
+    },
+    {
+      "name": "imgui-java-lwjgl3-1.86.11.jar",
+      "size": 37341,
+      "sha256": "076b8ad542e630e2b906d67c46540137b3cd6e0e5e9e1cfefc2f55994d446b42",
+      "sha1": "7f6657336844bd5a5321ca4987ff1e5476df5aeb",
+      "source": "maven",
+      "maven": "io.github.spair:imgui-java-lwjgl3:1.86.11"
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5.jar",
+      "size": 935338,
+      "sha256": "7571d38667a97b557e373821990a09d60772b139351932a37cee286aca7d8d8c",
+      "sha1": "49abf45c8aa02b0d2d72193c3ec4a67169f9647f",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-opengl:3.3.5"
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-windows.jar",
+      "size": 97529,
+      "sha256": "59895775a73e212c7e77036a6ba5ca0879cffbbffc1e3a61a2e19b12cd7c1d0b",
+      "sha1": "070ef32dea2b32172e765c758a12201b195123ca",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-opengl:3.3.5"
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-linux.jar",
+      "size": 80465,
+      "sha256": "c5fbde28703f8cb18c26eb46d9ea6a10b3f7256292cefaf330acbbd6089af7c7",
+      "sha1": "b8e029db65f2db3290179ba340ca6327dfc8195a",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-opengl:3.3.5"
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-macos.jar",
+      "size": 53874,
+      "sha256": "84f48c9e441eb18538506b80c04fe88b389c0caa6ab86124a19a0d1eccb906f1",
+      "sha1": "9aad8ed9b8a557536ee5bf20e8fdf70296219b12",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-opengl:3.3.5"
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-macos-arm64.jar",
+      "size": 42551,
+      "sha256": "eba5f4a24877ba0c1f06a4b992bdf4394c70c56fa2b529ee5328733bc60fcb4c",
+      "sha1": "e90e999725bceabdf41e3172d6b6a0ced910bc5b",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-opengl:3.3.5"
+    },
+    {
+      "name": "lwjgl-opengl-3.3.5-natives-windows-x86.jar",
+      "size": 89195,
+      "sha256": "13ac0c06bdd89ed51524e9a75b5884b04a18fa5c77bd2a90b986fc6f27e31a5c",
+      "sha1": "79eba886e9dc5200f33e6ec26deb7ed2eecce0f4",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-opengl:3.3.5"
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5.jar",
+      "size": 148076,
+      "sha256": "c321c8f1cee76ef91168d33e788a56e0f7db649dfa4df5000f2480ad367de872",
+      "sha1": "8e5cb628322a9485f44abee091a1b7354e310aaa",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-glfw:3.3.5"
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-windows.jar",
+      "size": 167787,
+      "sha256": "c221e4b20527e8ba9949963fd51374291690996dffaca24fa7fe6ca93c6d780c",
+      "sha1": "ec71ad4814b27850ac73580f593763e72dc5cbcc",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-glfw:3.3.5"
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-linux.jar",
+      "size": 128088,
+      "sha256": "062b439ffcfb266f600e72a44fd57631ff86d3a1237f359bb81e3d85f7002816",
+      "sha1": "699944742e2636d5374f9fe19cbd92ac98af0855",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-glfw:3.3.5"
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-macos.jar",
+      "size": 151490,
+      "sha256": "7f56e58a7305c4285feb7c81b6e6e662e64d8a771e74a6ed13a44eb7cf3934f2",
+      "sha1": "e18079ea3ec6dec7136c8cd747388f04ef1347ef",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-glfw:3.3.5"
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-macos-arm64.jar",
+      "size": 146091,
+      "sha256": "05ce6431e08b2ec5a36d44a78ade5148f8bdf80deb73dd206e8b1f78405feaa0",
+      "sha1": "a10adf8f0137244d4a00e05445adcf7a0974d29b",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-glfw:3.3.5"
+    },
+    {
+      "name": "lwjgl-glfw-3.3.5-natives-windows-x86.jar",
+      "size": 162551,
+      "sha256": "af23a5a0125cfe978f6985dd577c15710290e4e13989714f59fdd804ed6a3f87",
+      "sha1": "48c46c01b9cddc9f98aa256b502186edd7fd1305",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-glfw:3.3.5"
+    },
+    {
+      "name": "lwjgl-jawt-3.3.5.jar",
+      "size": 24830,
+      "sha256": "e3e754d449d86257b647d7501b986428dbf20877e29e27f99119754efc9184c6",
+      "sha1": "7a11a6e8789d2bf01461387f0f02ed619aa4599b",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl-jawt:3.3.5"
+    },
+    {
+      "name": "lwjgl-3.3.5.jar",
+      "size": 823244,
+      "sha256": "a115fe16c6f6e74af2fcd872dfebd710a1e588d72377523918034ec6a2340214",
+      "sha1": "1d4d9c56e41dc3c04f6a44c4cb6ba6fdeb7010d8",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl:3.3.5"
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-windows.jar",
+      "size": 164070,
+      "sha256": "e88d5fc6dde25bf59e6e512eee65a5267a74c87ae2eb6ac3beb1b2f39ad0a170",
+      "sha1": "c41b13feb6b9a492c7f6c19448b2354b467ea337",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl:3.3.5"
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-linux.jar",
+      "size": 121299,
+      "sha256": "a9b97025fbc3522c55454af03adf25dd28890925434613286c1cc928bf4a4acc",
+      "sha1": "59e25b7e90cfcc9ca56d780be99b6b52d50b566a",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl:3.3.5"
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-macos.jar",
+      "size": 75212,
+      "sha256": "19c6bb6b56ce90b886ac0c38b19a6b3abda8396f9c72524f2815d08ee87db499",
+      "sha1": "20800437c184afe0eedfc8e0a28718f81fa191e7",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl:3.3.5"
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-macos-arm64.jar",
+      "size": 50370,
+      "sha256": "04e0a5032b4454b4e5441d9ba4058a6d7157c17a60db81e074cc4c8ae64b7d73",
+      "sha1": "cfe73bbd6551abff40fbb28a32e53a8706af7f96",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl:3.3.5"
+    },
+    {
+      "name": "lwjgl-3.3.5-natives-windows-x86.jar",
+      "size": 148472,
+      "sha256": "977559d9dc606d22d5fdb4576b28c86ca2616c456a978d290a0633de5679a696",
+      "sha1": "afbaf7a1251864dbadeb74e4fe943d93cf0bbdc3",
+      "source": "maven",
+      "maven": "org.lwjgl:lwjgl:3.3.5"
+    },
+    {
+      "name": "gluegen-rt-2.6.0.jar",
+      "size": 411363,
+      "sha256": "465bbc8d410b872a76b5b901cdb9c2c07905edd5e61a7120dc6a4d007880ec2f",
+      "sha1": "524e9cc0f1939e201ae548229c66bafca0e1ed24",
+      "source": "maven",
+      "maven": "org.jogamp.gluegen:gluegen-rt:2.6.0"
+    },
+    {
+      "name": "gluegen-rt-2.6.0-natives-windows-amd64.jar",
+      "size": 23010,
+      "sha256": "c7c9138606858fed0b1650a2444cc1bc96599cc635a8d879979a37646e8594b1",
+      "sha1": "110296ba2cd56a540ac2ce6317b4338b436b22f2",
+      "source": "maven",
+      "maven": "org.jogamp.gluegen:gluegen-rt:2.6.0"
+    },
+    {
+      "name": "gluegen-rt-2.6.0-natives-linux-amd64.jar",
+      "size": 5590,
+      "sha256": "d500a38dedcbd6dfa89c5ae943a22d1051b1dbf1502f8544337bbe57d118f2c5",
+      "sha1": "7a99a746281a6ac3e97134b589c2d8d13dc0378e",
+      "source": "maven",
+      "maven": "org.jogamp.gluegen:gluegen-rt:2.6.0"
+    },
+    {
+      "name": "gluegen-rt-2.6.0-natives-macosx-universal.jar",
+      "size": 9734,
+      "sha256": "e543d5e81bc8b8f63e5dc365ac47da009f82175b2c6eba16a24ce3b2eb031773",
+      "sha1": "4bf2501aaa5cf4fad1cb76c725b0960208b12178",
+      "source": "maven",
+      "maven": "org.jogamp.gluegen:gluegen-rt:2.6.0"
+    },
+    {
+      "name": "jogl-all-2.6.0.jar",
+      "size": 3991187,
+      "sha256": "34c919bc6073c2d9e73cbe7558c4e9de6b5c58146f3658e2bcc5f23ec3fccc9f",
+      "sha1": "dc0dd5ce77cf31ea1dd8fc2c2c27592be76feb7c",
+      "source": "maven",
+      "maven": "org.jogamp.jogl:jogl-all:2.6.0"
+    },
+    {
+      "name": "jogl-all-2.6.0-natives-windows-amd64.jar",
+      "size": 294752,
+      "sha256": "33081ebfac520d7d283830a614f458f728104bef4eff56b52f604ee8c5af90c8",
+      "sha1": "e70929e872e5a6bd86ff6dd11134b43483a57fd1",
+      "source": "maven",
+      "maven": "org.jogamp.jogl:jogl-all:2.6.0"
+    },
+    {
+      "name": "jogl-all-2.6.0-natives-linux-amd64.jar",
+      "size": 268724,
+      "sha256": "3d0ed2674059fc207166ce1351de8d30e0b6102af12ca8b84fbf1bc3f246038a",
+      "sha1": "9c5dcf644b3f8a32fc41e341381cf1a4a8684d48",
+      "source": "maven",
+      "maven": "org.jogamp.jogl:jogl-all:2.6.0"
+    },
+    {
+      "name": "jogl-all-2.6.0-natives-macosx-universal.jar",
+      "size": 583638,
+      "sha256": "81db6a2b50f3803d4307a8bd7570a4f78c41ae0d44361208d0885a5cdf289dfa",
+      "sha1": "380dbba3613c1a3dafc18389074ca7fc6720076c",
+      "source": "maven",
+      "maven": "org.jogamp.jogl:jogl-all:2.6.0"
+    },
+    {
+      "name": "imgui-java-binding-1.86.11.jar",
+      "size": 150054,
+      "sha256": "cae0960cbd2784b6ab92d5ae13c9356db99eb7a35df9a6171669d64ab6f94b88",
+      "sha1": "09f6655bb12d271cb8c63e4394aa697ded1eae48",
+      "source": "maven",
+      "maven": "io.github.spair:imgui-java-binding:1.86.11"
+    },
+    {
+      "name": "imgui-java-natives-windows-1.86.11.jar",
+      "size": 1863787,
+      "sha256": "5d7909d011d6d5485090b247813c8f68a98cedad972b535cd78341ccc91f0a29",
+      "sha1": "7ad16055af581b5029f3938b0a91f98db7194249",
+      "source": "maven",
+      "maven": "io.github.spair:imgui-java-natives-windows:1.86.11"
+    },
+    {
+      "name": "lwjgl3-awt-0.2.3.jar",
+      "size": 62242,
+      "sha256": "abe1a021b282a01c4d00b53a07ffff946cfa85472ed1e11300a083c35f34572a",
+      "sha1": "2be63e81d6b73300d8203ce7235b2660c62eb3ea",
+      "source": "maven",
+      "maven": "org.lwjglx:lwjgl3-awt:0.2.3"
+    },
+    {
+      "name": "failureaccess-1.0.2.jar",
+      "size": 4740,
+      "sha256": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064",
+      "sha1": "c4a06a64e650562f30b7bf9aaec1bfed43aca12b",
+      "source": "maven",
+      "maven": "com.google.guava:failureaccess:1.0.2"
+    },
+    {
+      "name": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "size": 2199,
+      "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
+      "sha1": "b421526c5f297295adef1c886e5246c39d4ac629",
+      "source": "maven",
+      "maven": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"
+    },
+    {
+      "name": "jsr305-3.0.2.jar",
+      "size": 19936,
+      "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+      "sha1": "25ea2e8b0c338a877313bd4672d3fe056ea78f0d",
+      "source": "maven",
+      "maven": "com.google.code.findbugs:jsr305:3.0.2"
+    },
+    {
+      "name": "checker-qual-3.42.0.jar",
+      "size": 230830,
+      "sha256": "ccaedd33af0b7894d9f2f3b644f4d19e43928e32902e61ac4d10777830f5aac7",
+      "sha1": "638ec33f363a94d41a4f03c3e7d3dcfba64e402d",
+      "source": "maven",
+      "maven": "org.checkerframework:checker-qual:3.42.0"
+    },
+    {
+      "name": "error_prone_annotations-2.26.1.jar",
+      "size": 19373,
+      "sha256": "de25f2d9a2156529bd765f51d8efdfc0dfa7301e04efb9cc75b7f10cf5d0e0fb",
+      "sha1": "c1fde57694bdc14e8618899aaa6e857d9465d7de",
+      "source": "maven",
+      "maven": "com.google.errorprone:error_prone_annotations:2.26.1"
+    },
+    {
+      "name": "commons-codec-1.17.0.jar",
+      "size": 372608,
+      "sha256": "f700de80ac270d0344fdea7468201d8b9c805e5c648331c3619f2ee067ccfc59",
+      "sha1": "0dbe8eef6e14460e73da07f7b11bf994d6626355",
+      "source": "maven",
+      "maven": "commons-codec:commons-codec:1.17.0"
+    },
+    {
+      "name": "commons-io-2.16.1.jar",
+      "size": 508826,
+      "sha256": "f41f7baacd716896447ace9758621f62c1c6b0a91d89acee488da26fc477c84f",
+      "sha1": "377d592e740dc77124e0901291dbfaa6810a200e",
+      "source": "maven",
+      "maven": "commons-io:commons-io:2.16.1"
+    },
+    {
+      "name": "commons-lang3-3.14.0.jar",
+      "size": 657952,
+      "sha256": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c",
+      "sha1": "1ed471194b02f2c6cb734a0cd6f6f107c673afae",
+      "source": "maven",
+      "maven": "org.apache.commons:commons-lang3:3.14.0"
+    },
+    {
+      "name": "antlr-2.7.7.jar",
+      "size": 445288,
+      "sha256": "88fbda4b912596b9f56e8e12e580cc954bacfb51776ecfddd3e18fc1cf56dc4c",
+      "sha1": "83cd2cd674a217ade95a4bb83a8a14f351f48bd0",
+      "source": "maven",
+      "maven": "antlr:antlr:2.7.7"
+    }
+  ],
+  "publishedAt": "2026-11-05T23:18:57.550820700Z",
+  "publishedBy": "Eldritch Admin",
+  "template": {
+    "clientJvm17Arguments": [
+      "-XX:NativeMemoryTracking=summary",
+      "-XX:+DisableAttachMechanism",
+      "--add-opens=java.base/java.nio=ALL-UNNAMED",
+      "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
+      "-Dsun.java2d.d3d=false",
+      "-Dsun.java2d.noddraw=true",
+      "-Dsun.java2d.opengl=false",
+      "-XX:ErrorFile=${user.home}/.eldritch1/logs/hs_err_pid%p.log",
+      "-Xmx3072m",
+      "-Xms512m",
+      "-Xss2m",
+      "-XX:+UseG1GC",
+      "-XX:MaxGCPauseMillis=15",
+      "-XX:+ExplicitGCInvokesConcurrent",
+      "-XX:G1HeapRegionSize=4m",
+      "-XX:+UseCompressedOops",
+      "-XX:+UseStringDeduplication",
+      "-XX:+OptimizeStringConcat",
+      "-XX:+AlwaysPreTouch",
+      "--enable-native-access=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "clientJvm17MacArguments": [
+      "-XX:+DisableAttachMechanism",
+      "--add-opens=java.base/java.nio=ALL-UNNAMED",
+      "-Dsun.java2d.opengl=false",
+      "-Dsun.java2d.metal=true",
+      "-XX:ErrorFile=${user.home}/.eldritch1/logs/hs_err_pid%p.log",
+      "-Xmx3072m",
+      "-Xms512m",
+      "-Xss2m",
+      "-XX:+UseG1GC",
+      "-XX:MaxGCPauseMillis=15",
+      "-XX:+ExplicitGCInvokesConcurrent",
+      "-XX:G1HeapRegionSize=4m",
+      "-XX:+UseCompressedOops",
+      "-XX:+UseStringDeduplication",
+      "-XX:+OptimizeStringConcat",
+      "-XX:+AlwaysPreTouch",
+      "--enable-native-access=ALL-UNNAMED",
+      "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "clientJvm9Arguments": [
+      "-XX:NativeMemoryTracking=summary",
+      "-XX:+DisableAttachMechanism",
+      "--add-opens=java.base/java.nio=ALL-UNNAMED",
+      "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
+      "-Dsun.java2d.d3d=false",
+      "-Dsun.java2d.noddraw=true",
+      "-Dsun.java2d.opengl=false",
+      "-XX:ErrorFile=${user.home}/.eldritch1/logs/hs_err_pid%p.log",
+      "-Xmx3072m",
+      "-Xms256m",
+      "-Xss2m",
+      "-XX:+UseG1GC",
+      "-XX:MaxGCPauseMillis=15",
+      "-XX:+ExplicitGCInvokesConcurrent",
+      "-XX:G1HeapRegionSize=4m",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "clientJvmArguments": [
+      "-XX:NativeMemoryTracking=summary",
+      "-XX:+DisableAttachMechanism",
+      "--add-opens=java.base/java.nio=ALL-UNNAMED",
+      "-Xmx3072m",
+      "-Xms256m",
+      "-Xss2m",
+      "-XX:+UseG1GC",
+      "-XX:MaxGCPauseMillis=15",
+      "-XX:+ExplicitGCInvokesConcurrent",
+      "-XX:G1HeapRegionSize=4m",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "launcherArguments": [
+      "-XX:+DisableAttachMechanism",
+      "-Drunelite.launcher.nojvm=true",
+      "-Xmx512m",
+      "-Xss2m",
+      "-XX:CompileThreshold=1500",
+      "-XX:+UseG1GC",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "launcherJvm11Arguments": [
+      "-XX:+DisableAttachMechanism",
+      "-Drunelite.launcher.nojvm=true",
+      "-Xmx512m",
+      "-Xss2m",
+      "-XX:CompileThreshold=1500",
+      "-XX:+UseG1GC",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "launcherJvm11WindowsArguments": [
+      "-XX:+DisableAttachMechanism",
+      "-Drunelite.launcher.nojvm=true",
+      "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
+      "-Dsun.java2d.d3d=false",
+      "-Dsun.java2d.noddraw=true",
+      "-Dsun.java2d.opengl=false",
+      "-XX:ErrorFile=${user.home}/.eldritch1/logs/hs_err_pid%p.log",
+      "-Xmx512m",
+      "-Xss2m",
+      "-XX:CompileThreshold=1500",
+      "-XX:+UseG1GC",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "launcherJvm17Arguments": [
+      "-XX:+DisableAttachMechanism",
+      "-Drunelite.launcher.nojvm=true",
+      "-Xmx512m",
+      "-Xss2m",
+      "-XX:CompileThreshold=1500",
+      "-XX:+UseZGC",
+      "-XX:+ZGenerational",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "launcherJvm17MacArguments": [
+      "-XX:+DisableAttachMechanism",
+      "-Drunelite.launcher.nojvm=true",
+      "-Xmx512m",
+      "-Xss2m",
+      "-XX:CompileThreshold=1500",
+      "-XX:+UseZGC",
+      "-XX:+ZGenerational",
+      "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ],
+    "launcherJvm17WindowsArguments": [
+      "-XX:+DisableAttachMechanism",
+      "-Drunelite.launcher.nojvm=true",
+      "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
+      "-Dsun.java2d.d3d=false",
+      "-Dsun.java2d.noddraw=true",
+      "-Dsun.java2d.opengl=false",
+      "-Xmx512m",
+      "-Xss2m",
+      "-XX:CompileThreshold=1500",
+      "-XX:+UseZGC",
+      "-XX:+ZGenerational",
+      "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
+      "--add-opens=java.desktop/sun.swing.table=ALL-UNNAMED",
+      "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
+    ]
+  },
+  "templateFrom": "bootstrap.template.json @ 362648bf",
+  "templateSha256": "79ec60ed1e947857516b47c23c07ef1b64ec8415c3cfac5506d0001a4fa65b41",
+  "argumentChecks": [
+    "OK clientJvm9Arguments: Java 11.0.30 starts with it",
+    "OK launcherJvm11Arguments: Java 11.0.30 starts with it",
+    "OK launcherJvm11WindowsArguments: Java 11.0.30 starts with it",
+    "OK clientJvm17Arguments: Java 17.0.18 starts with it",
+    "OK clientJvm17MacArguments: Java 17.0.18 starts with it",
+    "FAILED launcherJvm17Arguments: Java 17.0.18 does not start with it: Unrecognized VM option 'ZGenerational'",
+    "FAILED launcherJvm17MacArguments: Java 17.0.18 does not start with it: Unrecognized VM option 'ZGenerational'",
+    "FAILED launcherJvm17WindowsArguments: Java 17.0.18 does not start with it: Unrecognized VM option 'ZGenerational'"
+  ],
+  "keepPublishedArguments": false
+}

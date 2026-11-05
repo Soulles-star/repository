@@ -2,12 +2,10 @@
   "launcherArguments": [
     "-XX:+DisableAttachMechanism",
     "-Drunelite.launcher.nojvm=true",
-    "-Xmx2048m",
+    "-Xmx512m",
     "-Xss2m",
     "-XX:CompileThreshold=1500",
-    "-Xincgc",
-    "-XX:+UseConcMarkSweepGC",
-    "-XX:+UseParNewGC",
+    "-XX:+UseG1GC",
     "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
     "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
     "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
@@ -17,9 +15,10 @@
   "launcherJvm11Arguments": [
     "-XX:+DisableAttachMechanism",
     "-Drunelite.launcher.nojvm=true",
-    "-Xmx2048m",
+    "-Xmx512m",
     "-Xss2m",
     "-XX:CompileThreshold=1500",
+    "-XX:+UseG1GC",
     "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
     "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
     "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
@@ -33,9 +32,11 @@
     "-Dsun.java2d.d3d=false",
     "-Dsun.java2d.noddraw=true",
     "-Dsun.java2d.opengl=false",
-    "-Xmx2048m",
+    "-XX:ErrorFile=${user.home}/.eldritch1/logs/hs_err_pid%p.log",
+    "-Xmx512m",
     "-Xss2m",
     "-XX:CompileThreshold=1500",
+    "-XX:+UseG1GC",
     "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
     "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
     "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
@@ -84,12 +85,15 @@
     "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "clientJvmArguments": [
+    "-XX:NativeMemoryTracking=summary",
     "-XX:+DisableAttachMechanism",
+    "--add-opens=java.base/java.nio=ALL-UNNAMED",
     "-Xmx3072m",
     "-Xms256m",
     "-Xss2m",
     "-XX:+UseG1GC",
     "-XX:MaxGCPauseMillis=15",
+    "-XX:+ExplicitGCInvokesConcurrent",
     "-XX:G1HeapRegionSize=4m",
     "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
     "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
@@ -98,7 +102,9 @@
     "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "clientJvm9Arguments": [
+    "-XX:NativeMemoryTracking=summary",
     "-XX:+DisableAttachMechanism",
+    "--add-opens=java.base/java.nio=ALL-UNNAMED",
     "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
     "-Dsun.java2d.d3d=false",
     "-Dsun.java2d.noddraw=true",
@@ -109,6 +115,7 @@
     "-Xss2m",
     "-XX:+UseG1GC",
     "-XX:MaxGCPauseMillis=15",
+    "-XX:+ExplicitGCInvokesConcurrent",
     "-XX:G1HeapRegionSize=4m",
     "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
     "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
@@ -118,13 +125,16 @@
   ],
   "clientJvm17MacArguments": [
     "-XX:+DisableAttachMechanism",
+    "--add-opens=java.base/java.nio=ALL-UNNAMED",
     "-Dsun.java2d.opengl=false",
+    "-Dsun.java2d.metal=true",
     "-XX:ErrorFile=${user.home}/.eldritch1/logs/hs_err_pid%p.log",
     "-Xmx4096m",
     "-Xms512m",
     "-Xss2m",
     "-XX:+UseG1GC",
     "-XX:MaxGCPauseMillis=15",
+    "-XX:+ExplicitGCInvokesConcurrent",
     "-XX:G1HeapRegionSize=4m",
     "-XX:+UseCompressedOops",
     "-XX:+UseStringDeduplication",
@@ -139,7 +149,9 @@
     "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
   ],
   "clientJvm17Arguments": [
+    "-XX:NativeMemoryTracking=summary",
     "-XX:+DisableAttachMechanism",
+    "--add-opens=java.base/java.nio=ALL-UNNAMED",
     "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
     "-Dsun.java2d.d3d=false",
     "-Dsun.java2d.noddraw=true",
@@ -150,6 +162,7 @@
     "-Xss2m",
     "-XX:+UseG1GC",
     "-XX:MaxGCPauseMillis=15",
+    "-XX:+ExplicitGCInvokesConcurrent",
     "-XX:G1HeapRegionSize=4m",
     "-XX:+UseCompressedOops",
     "-XX:+UseStringDeduplication",
@@ -164,348 +177,500 @@
   ],
   "artifacts": [
     {
-      "hash": "0addec670fedcd3f113c5c8091d783280d23f75e3acb841b61a9cdb079376a08",
-      "name": "aopalliance-1.0.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/aopalliance-1.0.jar",
-      "size": 4467,
-      "platform": []
-    },
-    {
-      "hash": "c418d6aab4db4f1f70983d355de8d7c1e755c754820a92294da2e5f5081022cc",
-      "name": "commons-csv-1.9.0.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/commons-csv-1.9.0.jar",
-      "size": 51322,
-      "platform": []
-    },
-    {
-      "hash": "980ef14cb0468c7080f88a72fab73f9c89c029217f3c8c535b0672570e32cc08",
-      "name": "commons-lang3-3.0.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/commons-lang3-3.0.jar",
-      "size": 306008,
-      "platform": []
-    },
-    {
-      "hash": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
-      "name": "commons-text-1.9.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/commons-text-1.9.jar",
-      "size": 216211,
-      "platform": []
-    },
-    {
-      "hash": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
-      "name": "flatlaf-3.6.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/flatlaf-3.6.jar",
-      "size": 925551,
-      "platform": []
-    },
-    {
-      "hash": "5688defa51e83b5d984c9ec9f5a5da698d3bcfed0dc4843410a81db3d0aa10d4",
       "name": "game-0.0.8.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/game-0.0.8.jar",
-      "size": 10260852,
-      "platform": []
+      "hash": "2e2bf40297747d6da7db572069dc4bbe6facffddfc4a55499cba554a736e4b74",
+      "size": 50538461,
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
+      "name": "aopalliance-1.0.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/aopalliance-1.0.jar",
+      "hash": "0addec670fedcd3f113c5c8091d783280d23f75e3acb841b61a9cdb079376a08",
+      "size": 4467,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "commons-csv-1.9.0.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/commons-csv-1.9.0.jar",
+      "hash": "c418d6aab4db4f1f70983d355de8d7c1e755c754820a92294da2e5f5081022cc",
+      "size": 51322,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "commons-text-1.9.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/commons-text-1.9.jar",
+      "hash": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
+      "size": 216211,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "fileStore.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/fileStore.jar",
+      "hash": "eb95319edd91e2fc29c60df0507cdb342cc72645f98cad7894822e0b53a56f94",
+      "size": 66553,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "flatlaf-3.6.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/flatlaf-3.6.jar",
+      "hash": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
+      "size": 925551,
+      "diffs": null,
+      "platform": null
+    },
+    {
       "name": "gson-2.9.0.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/gson-2.9.0.jar",
+      "hash": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
       "size": 249277,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
       "name": "guice-5.1.0.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/guice-5.1.0.jar",
+      "hash": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
       "size": 777563,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
       "name": "javax.inject-1.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/javax.inject-1.jar",
+      "hash": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
       "size": 2497,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
-      "name": "javax.nonnull.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/javax.nonnull.jar",
-      "size": 19936,
-      "platform": []
-    },
-    {
-      "hash": "d440ceb839d6adb5cfa81aa321813d60255e68a3e9ca564c91126599310abde5",
       "name": "jopt-simple-6.0-alpha-3.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/jopt-simple-6.0-alpha-3.jar",
+      "hash": "d440ceb839d6adb5cfa81aa321813d60255e68a3e9ca564c91126599310abde5",
       "size": 79368,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "905721a0eea90a81534abb7ee6ef4ea2e5e645fa1def0a5cd88402df1b46c9ed",
-      "name": "jsr305-1.3.9.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/jsr305-1.3.9.jar",
-      "size": 33015,
-      "platform": []
-    },
-    {
-      "hash": "3160ae988af82c8bf3024ddbe034a82da98bb186fd09e76c50543c5b9da5cc5e",
       "name": "logback-classic-1.2.10.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/logback-classic-1.2.10.jar",
+      "hash": "3160ae988af82c8bf3024ddbe034a82da98bb186fd09e76c50543c5b9da5cc5e",
       "size": 233809,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "ba51a3fe56691f9dd7fe742e4a73c3ab4aaaa32202c73409ba56f18687399a08",
       "name": "logback-core-1.2.10.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/logback-core-1.2.10.jar",
+      "hash": "ba51a3fe56691f9dd7fe742e4a73c3ab4aaaa32202c73409ba56f18687399a08",
       "size": 454203,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "1e1e427c36ff63c44fd30ef292d9e773ea3154460ab6265d3fed7e6f5bc50fb9",
-      "name": "lombok-1.18.38.jar",
-      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/lombok-1.18.38.jar",
-      "size": 2056090,
-      "platform": []
+      "name": "rs-cache-library-7.2.0.jar",
+      "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/rs-cache-library-7.2.0.jar",
+      "hash": "4042238b00f02c339a9288bdd4a3b8f0f4e8e8765ff5921b4fe8b29d194c142a",
+      "size": 4231168,
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "3624f8474c1af46d75f98bc097d7864a323c81b3808aa43689a6e1c601c027be",
       "name": "slf4j-api-1.7.32.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/slf4j-api-1.7.32.jar",
+      "hash": "3624f8474c1af46d75f98bc097d7864a323c81b3808aa43689a6e1c601c027be",
       "size": 41513,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "0467d25f408428824d5c9c09ec60ee1f0bc341d9bf48971a77fd14939a826c83",
       "name": "substance-8.0.02.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/substance-8.0.02.jar",
+      "hash": "0467d25f408428824d5c9c09ec60ee1f0bc341d9bf48971a77fd14939a826c83",
       "size": 1589195,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
       "name": "synthetica.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/synthetica.jar",
+      "hash": "f57f2bc681d10e786716723d63bb59153628735b2c50ae095e0d6d02d22895bf",
       "size": 693313,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "aba4103ac457e232c2eb8e6116b65e42056829bcf6e23eefe464e7c6091a9e75",
       "name": "syntheticaBlackEye.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/syntheticaBlackEye.jar",
+      "hash": "aba4103ac457e232c2eb8e6116b65e42056829bcf6e23eefe464e7c6091a9e75",
       "size": 264525,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "3214e1c23d549d5d67c91da4da1ef33c5248470bb824f91cbe8f9e0beea59eef",
       "name": "trident-1.5.00.jar",
       "path": "https://raw.githubusercontent.com/Soulles-star/repository/master/client/live/repo/trident-1.5.00.jar",
+      "hash": "3214e1c23d549d5d67c91da4da1ef33c5248470bb824f91cbe8f9e0beea59eef",
       "size": 79726,
-      "platform": []
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "99f491e86262ce38d13b3581d40f77acdb4696a9505447c3154474c3192908dd",
       "name": "guava-33.2.0-jre.jar",
       "path": "https://repo.maven.apache.org/maven2/com/google/guava/guava/33.2.0-jre/guava-33.2.0-jre.jar",
-      "size": 3054490
+      "hash": "99f491e86262ce38d13b3581d40f77acdb4696a9505447c3154474c3192908dd",
+      "size": 3054490,
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064",
-      "name": "failureaccess-1.0.2.jar",
-      "path": "https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar",
-      "size": 4740
+      "name": "commons-compress-1.26.2.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.26.2/commons-compress-1.26.2.jar",
+      "hash": "9168a03141d8fc7eda21a2360d83cc0412bcbb1d6204d992bd48c2573cb3c6b8",
+      "size": 1083634,
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
-      "name": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-      "path": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-      "size": 2199
+      "name": "xz-1.9.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/tukaani/xz/1.9/xz-1.9.jar",
+      "hash": "211b306cfc44f8f96df3a0a3ddaf75ba8c5289eed77d60d72f889bb855f535e5",
+      "size": 116013,
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
-      "name": "jsr305-3.0.2.jar",
-      "path": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-      "size": 19936
+      "name": "json-20240303.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/json/json/20240303/json-20240303.jar",
+      "hash": "3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed",
+      "size": 78332,
+      "diffs": null,
+      "platform": null
     },
     {
-      "hash": "ccaedd33af0b7894d9f2f3b644f4d19e43928e32902e61ac4d10777830f5aac7",
-      "name": "checker-qual-3.42.0.jar",
-      "path": "https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
-      "size": 230830
-    },
-    {
-      "hash": "de25f2d9a2156529bd765f51d8efdfc0dfa7301e04efb9cc75b7f10cf5d0e0fb",
-      "name": "error_prone_annotations-2.26.1.jar",
-      "path": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar",
-      "size": 19373
+      "name": "imgui-java-lwjgl3-1.86.11.jar",
+      "path": "https://repo.maven.apache.org/maven2/io/github/spair/imgui-java-lwjgl3/1.86.11/imgui-java-lwjgl3-1.86.11.jar",
+      "hash": "076b8ad542e630e2b906d67c46540137b3cd6e0e5e9e1cfefc2f55994d446b42",
+      "size": 37341,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-opengl-3.3.5.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5.jar",
       "hash": "7571d38667a97b557e373821990a09d60772b139351932a37cee286aca7d8d8c",
-      "size": 935338
+      "size": 935338,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-opengl-3.3.5-natives-windows.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-windows.jar",
       "hash": "59895775a73e212c7e77036a6ba5ca0879cffbbffc1e3a61a2e19b12cd7c1d0b",
-      "size": 97529
+      "size": 97529,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-opengl-3.3.5-natives-linux.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-linux.jar",
       "hash": "c5fbde28703f8cb18c26eb46d9ea6a10b3f7256292cefaf330acbbd6089af7c7",
-      "size": 80465
+      "size": 80465,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-opengl-3.3.5-natives-macos.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-macos.jar",
       "hash": "84f48c9e441eb18538506b80c04fe88b389c0caa6ab86124a19a0d1eccb906f1",
-      "size": 53874
+      "size": 53874,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-opengl-3.3.5-natives-macos-arm64.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-macos-arm64.jar",
       "hash": "eba5f4a24877ba0c1f06a4b992bdf4394c70c56fa2b529ee5328733bc60fcb4c",
-      "size": 42551
+      "size": 42551,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-opengl-3.3.5-natives-windows-x86.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-opengl/3.3.5/lwjgl-opengl-3.3.5-natives-windows-x86.jar",
       "hash": "13ac0c06bdd89ed51524e9a75b5884b04a18fa5c77bd2a90b986fc6f27e31a5c",
-      "size": 89195
+      "size": 89195,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-glfw-3.3.5.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5.jar",
       "hash": "c321c8f1cee76ef91168d33e788a56e0f7db649dfa4df5000f2480ad367de872",
-      "size": 148076
+      "size": 148076,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-glfw-3.3.5-natives-windows.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-windows.jar",
       "hash": "c221e4b20527e8ba9949963fd51374291690996dffaca24fa7fe6ca93c6d780c",
-      "size": 167787
+      "size": 167787,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-glfw-3.3.5-natives-linux.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-linux.jar",
       "hash": "062b439ffcfb266f600e72a44fd57631ff86d3a1237f359bb81e3d85f7002816",
-      "size": 128088
+      "size": 128088,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-glfw-3.3.5-natives-macos.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-macos.jar",
       "hash": "7f56e58a7305c4285feb7c81b6e6e662e64d8a771e74a6ed13a44eb7cf3934f2",
-      "size": 151490
+      "size": 151490,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-glfw-3.3.5-natives-macos-arm64.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-macos-arm64.jar",
       "hash": "05ce6431e08b2ec5a36d44a78ade5148f8bdf80deb73dd206e8b1f78405feaa0",
-      "size": 146091
+      "size": 146091,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-glfw-3.3.5-natives-windows-x86.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-glfw/3.3.5/lwjgl-glfw-3.3.5-natives-windows-x86.jar",
       "hash": "af23a5a0125cfe978f6985dd577c15710290e4e13989714f59fdd804ed6a3f87",
-      "size": 162551
+      "size": 162551,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-jawt-3.3.5.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl-jawt/3.3.5/lwjgl-jawt-3.3.5.jar",
       "hash": "e3e754d449d86257b647d7501b986428dbf20877e29e27f99119754efc9184c6",
-      "size": 24830
+      "size": 24830,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-3.3.5.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5.jar",
       "hash": "a115fe16c6f6e74af2fcd872dfebd710a1e588d72377523918034ec6a2340214",
-      "size": 823244
+      "size": 823244,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-3.3.5-natives-windows.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-windows.jar",
       "hash": "e88d5fc6dde25bf59e6e512eee65a5267a74c87ae2eb6ac3beb1b2f39ad0a170",
-      "size": 164070
+      "size": 164070,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-3.3.5-natives-linux.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-linux.jar",
       "hash": "a9b97025fbc3522c55454af03adf25dd28890925434613286c1cc928bf4a4acc",
-      "size": 121299
+      "size": 121299,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-3.3.5-natives-macos.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-macos.jar",
       "hash": "19c6bb6b56ce90b886ac0c38b19a6b3abda8396f9c72524f2815d08ee87db499",
-      "size": 75212
+      "size": 75212,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-3.3.5-natives-macos-arm64.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-macos-arm64.jar",
       "hash": "04e0a5032b4454b4e5441d9ba4058a6d7157c17a60db81e074cc4c8ae64b7d73",
-      "size": 50370
+      "size": 50370,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl-3.3.5-natives-windows-x86.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjgl/lwjgl/3.3.5/lwjgl-3.3.5-natives-windows-x86.jar",
       "hash": "977559d9dc606d22d5fdb4576b28c86ca2616c456a978d290a0633de5679a696",
-      "size": 148472
+      "size": 148472,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "gluegen-rt-2.6.0.jar",
       "path": "https://repo.maven.apache.org/maven2/org/jogamp/gluegen/gluegen-rt/2.6.0/gluegen-rt-2.6.0.jar",
       "hash": "465bbc8d410b872a76b5b901cdb9c2c07905edd5e61a7120dc6a4d007880ec2f",
-      "size": 411363
+      "size": 411363,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "gluegen-rt-2.6.0-natives-windows-amd64.jar",
       "path": "https://repo.maven.apache.org/maven2/org/jogamp/gluegen/gluegen-rt/2.6.0/gluegen-rt-2.6.0-natives-windows-amd64.jar",
       "hash": "c7c9138606858fed0b1650a2444cc1bc96599cc635a8d879979a37646e8594b1",
-      "size": 23010
+      "size": 23010,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "gluegen-rt-2.6.0-natives-linux-amd64.jar",
       "path": "https://repo.maven.apache.org/maven2/org/jogamp/gluegen/gluegen-rt/2.6.0/gluegen-rt-2.6.0-natives-linux-amd64.jar",
       "hash": "d500a38dedcbd6dfa89c5ae943a22d1051b1dbf1502f8544337bbe57d118f2c5",
-      "size": 5590
+      "size": 5590,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "gluegen-rt-2.6.0-natives-macosx-universal.jar",
       "path": "https://repo.maven.apache.org/maven2/org/jogamp/gluegen/gluegen-rt/2.6.0/gluegen-rt-2.6.0-natives-macosx-universal.jar",
       "hash": "e543d5e81bc8b8f63e5dc365ac47da009f82175b2c6eba16a24ce3b2eb031773",
-      "size": 9734
+      "size": 9734,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "jogl-all-2.6.0.jar",
       "path": "https://repo.maven.apache.org/maven2/org/jogamp/jogl/jogl-all/2.6.0/jogl-all-2.6.0.jar",
       "hash": "34c919bc6073c2d9e73cbe7558c4e9de6b5c58146f3658e2bcc5f23ec3fccc9f",
-      "size": 3991187
+      "size": 3991187,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "jogl-all-2.6.0-natives-windows-amd64.jar",
       "path": "https://repo.maven.apache.org/maven2/org/jogamp/jogl/jogl-all/2.6.0/jogl-all-2.6.0-natives-windows-amd64.jar",
       "hash": "33081ebfac520d7d283830a614f458f728104bef4eff56b52f604ee8c5af90c8",
-      "size": 294752
+      "size": 294752,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "jogl-all-2.6.0-natives-linux-amd64.jar",
       "path": "https://repo.maven.apache.org/maven2/org/jogamp/jogl/jogl-all/2.6.0/jogl-all-2.6.0-natives-linux-amd64.jar",
       "hash": "3d0ed2674059fc207166ce1351de8d30e0b6102af12ca8b84fbf1bc3f246038a",
-      "size": 268724
+      "size": 268724,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "jogl-all-2.6.0-natives-macosx-universal.jar",
       "path": "https://repo.maven.apache.org/maven2/org/jogamp/jogl/jogl-all/2.6.0/jogl-all-2.6.0-natives-macosx-universal.jar",
       "hash": "81db6a2b50f3803d4307a8bd7570a4f78c41ae0d44361208d0885a5cdf289dfa",
-      "size": 583638
+      "size": 583638,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "imgui-java-binding-1.86.11.jar",
+      "path": "https://repo.maven.apache.org/maven2/io/github/spair/imgui-java-binding/1.86.11/imgui-java-binding-1.86.11.jar",
+      "hash": "cae0960cbd2784b6ab92d5ae13c9356db99eb7a35df9a6171669d64ab6f94b88",
+      "size": 150054,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "imgui-java-natives-windows-1.86.11.jar",
+      "path": "https://repo.maven.apache.org/maven2/io/github/spair/imgui-java-natives-windows/1.86.11/imgui-java-natives-windows-1.86.11.jar",
+      "hash": "5d7909d011d6d5485090b247813c8f68a98cedad972b535cd78341ccc91f0a29",
+      "size": 1863787,
+      "diffs": null,
+      "platform": null
     },
     {
       "name": "lwjgl3-awt-0.2.3.jar",
       "path": "https://repo.maven.apache.org/maven2/org/lwjglx/lwjgl3-awt/0.2.3/lwjgl3-awt-0.2.3.jar",
       "hash": "abe1a021b282a01c4d00b53a07ffff946cfa85472ed1e11300a083c35f34572a",
-      "size": 62242
+      "size": 62242,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "failureaccess-1.0.2.jar",
+      "path": "https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar",
+      "hash": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064",
+      "size": 4740,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "path": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "hash": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
+      "size": 2199,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "jsr305-3.0.2.jar",
+      "path": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+      "hash": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+      "size": 19936,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "checker-qual-3.42.0.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar",
+      "hash": "ccaedd33af0b7894d9f2f3b644f4d19e43928e32902e61ac4d10777830f5aac7",
+      "size": 230830,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "error_prone_annotations-2.26.1.jar",
+      "path": "https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar",
+      "hash": "de25f2d9a2156529bd765f51d8efdfc0dfa7301e04efb9cc75b7f10cf5d0e0fb",
+      "size": 19373,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "commons-codec-1.17.0.jar",
+      "path": "https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.17.0/commons-codec-1.17.0.jar",
+      "hash": "f700de80ac270d0344fdea7468201d8b9c805e5c648331c3619f2ee067ccfc59",
+      "size": 372608,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "commons-io-2.16.1.jar",
+      "path": "https://repo.maven.apache.org/maven2/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar",
+      "hash": "f41f7baacd716896447ace9758621f62c1c6b0a91d89acee488da26fc477c84f",
+      "size": 508826,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "commons-lang3-3.14.0.jar",
+      "path": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar",
+      "hash": "7b96bf3ee68949abb5bc465559ac270e0551596fa34523fddf890ec418dde13c",
+      "size": 657952,
+      "diffs": null,
+      "platform": null
+    },
+    {
+      "name": "antlr-2.7.7.jar",
+      "path": "https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar",
+      "hash": "88fbda4b912596b9f56e8e12e580cc954bacfb51776ecfddd3e18fc1cf56dc4c",
+      "size": 445288,
+      "diffs": null,
+      "platform": null
     }
   ],
   "updates": [
@@ -526,7 +691,7 @@
     "commons-lang3-3.0.jar": "980ef14cb0468c7080f88a72fab73f9c89c029217f3c8c535b0672570e32cc08",
     "commons-text-1.9.jar": "0812f284ac5dd0d617461d9a2ab6ac6811137f25122dfffd4788a4871e732d00",
     "flatlaf-3.6.jar": "2df1e3183600262a15f76aa4ae5acc2c154e884f7672bddaaac66842a37cf3f0",
-    "game-0.0.8.jar": "5688defa51e83b5d984c9ec9f5a5da698d3bcfed0dc4843410a81db3d0aa10d4",
+    "game-0.0.8.jar": "2e2bf40297747d6da7db572069dc4bbe6facffddfc4a55499cba554a736e4b74",
     "gson-2.9.0.jar": "c96d60551331a196dac54b745aa642cd078ef89b6f267146b705f2c2cbef052d",
     "guice-5.1.0.jar": "4130e50bfac48099c860f0d903b91860c81a249c90f38245f8fed58fc817bc26",
     "javax.inject-1.jar": "91c77044a50c481636c32d916fd89c9118a72195390452c81065080f957de7ff",
