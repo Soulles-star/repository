@@ -1,20 +1,20 @@
 {
   "format": 1,
-  "id": "20261106-234644-7073693e",
+  "id": "20261110-000112-1989064c",
   "version": "0.0.8",
-  "commit": "7073693e4c2d3906cc6ae2ad5879f1cb9daf6f3d",
+  "commit": "1989064ccfba66ae9f63b4934ee8204901c399c2",
   "branch": "feat/mounts",
-  "subject": "fix(design): swatches and exact colours show on the hub's Design page",
+  "subject": "Admin: the moved shops are edited in Admin -> Shops only",
   "dirty": false,
   "dirtyFiles": [],
-  "builtAt": "2026-11-06T22:46:44.483Z",
+  "builtAt": "2026-11-09T23:01:12.091Z",
   "builtWith": "stageClientRelease, Java 24.0.2",
   "features": [
     "cache-pipeline-phase1"
   ],
   "checks": [
-    "OK Java 11.0.30 with the release's clientJvm9Arguments: OK: 3576/3576 game classes load; 32367 class and 4339 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack",
-    "OK Java 17.0.18 with the release's clientJvm17(Windows)Arguments: OK: 3576/3576 game classes load; 32367 class and 4339 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack"
+    "OK Java 11.0.30 with the release's clientJvm9Arguments: OK: 3710/3710 game classes load; 33804 class and 4360 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack",
+    "OK Java 17.0.18 with the release's clientJvm17(Windows)Arguments: OK: 3710/3710 game classes load; 33804 class and 4360 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack"
   ],
   "excluded": [
     "commons-lang3-3.0.jar: other version of commons-lang3-3.14.0.jar (Gradle resolves org.apache.commons:commons-lang3:3.14.0; one version per library)",
@@ -29,9 +29,9 @@
   "jars": [
     {
       "name": "game-0.0.8.jar",
-      "size": 51611599,
-      "sha256": "031e05abb276740b25635dbed8e9846c0446a715ab3c75e029e7f69249ee840a",
-      "sha1": "73e555094e9e7b274f8840dc671c0dcc054cdd71",
+      "size": 52285909,
+      "sha256": "dcb775ad3f2d01ac7988634d65c8b7eb984905d197fd93938a64ae2eae9c3c7b",
+      "sha1": "c203716ed31681f25f2a88dd377066ac4bb4be5a",
       "source": "client"
     },
     {
@@ -506,11 +506,10 @@
       "maven": "antlr:antlr:2.7.7"
     }
   ],
-  "publishedAt": "2026-11-06T22:46:51.676170600Z",
+  "publishedAt": "2026-11-09T23:01:46.156800900Z",
   "publishedBy": "Eldritch Admin",
   "template": {
     "clientJvm17Arguments": [
-      "-XX:NativeMemoryTracking=summary",
       "-XX:+DisableAttachMechanism",
       "--add-opens=java.base/java.nio=ALL-UNNAMED",
       "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
@@ -528,7 +527,6 @@
       "-XX:+UseCompressedOops",
       "-XX:+UseStringDeduplication",
       "-XX:+OptimizeStringConcat",
-      "-XX:+AlwaysPreTouch",
       "--enable-native-access=ALL-UNNAMED",
       "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
       "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
@@ -552,7 +550,6 @@
       "-XX:+UseCompressedOops",
       "-XX:+UseStringDeduplication",
       "-XX:+OptimizeStringConcat",
-      "-XX:+AlwaysPreTouch",
       "--enable-native-access=ALL-UNNAMED",
       "--add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED",
       "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
@@ -562,7 +559,6 @@
       "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
     ],
     "clientJvm9Arguments": [
-      "-XX:NativeMemoryTracking=summary",
       "-XX:+DisableAttachMechanism",
       "--add-opens=java.base/java.nio=ALL-UNNAMED",
       "-Drunelite.launcher.blacklistedDlls=RTSSHooks.dll,RTSSHooks64.dll,NahimicOSD.dll,NahimicMSIOSD.dll,Nahimic2OSD.dll,Nahimic2DevProps.dll,k_fps32.dll,k_fps64.dll,SS2DevProps.dll,SS2OSD.dll,GTIII-OSD64-GL.dll,GTIII-OSD64-VK.dll,GTIII-OSD64.dll,nvspcap.dll,nvspcap64.dll,NvCamera.dll,NvCamera64.dll",
@@ -584,7 +580,6 @@
       "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
     ],
     "clientJvmArguments": [
-      "-XX:NativeMemoryTracking=summary",
       "-XX:+DisableAttachMechanism",
       "--add-opens=java.base/java.nio=ALL-UNNAMED",
       "-Xmx3072m",
@@ -692,8 +687,8 @@
       "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
     ]
   },
-  "templateFrom": "bootstrap.template.json @ 7073693e",
-  "templateSha256": "79ec60ed1e947857516b47c23c07ef1b64ec8415c3cfac5506d0001a4fa65b41",
+  "templateFrom": "bootstrap.template.json @ 1989064c",
+  "templateSha256": "a21b9a65a35a1fbb6f836b6a851d39355829c3fdc87ae6010df9048a267679bd",
   "argumentChecks": [
     "OK clientJvm9Arguments: Java 11.0.30 starts with it",
     "OK launcherJvm11Arguments: Java 11.0.30 starts with it",
