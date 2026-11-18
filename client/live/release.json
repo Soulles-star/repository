@@ -1,13 +1,13 @@
 {
   "format": 1,
-  "id": "20261117-215922-09a1d43a",
+  "id": "20261118-022705-d17b9555",
   "version": "0.0.8",
-  "commit": "09a1d43a9bf17748551f06e9af385add0f9c443f",
+  "commit": "d17b9555a8d80dfcac27f0cc5133e1b03ecf2932",
   "branch": "feat/mounts",
-  "subject": "Admin -> Boxes: + Add a set beside + Add item: search every gear set, one click puts all its pieces in the tier",
+  "subject": "Performance overlay Detailed also writes the 5 s frame stats to client.log",
   "dirty": false,
   "dirtyFiles": [],
-  "builtAt": "2026-11-17T20:59:22.919Z",
+  "builtAt": "2026-11-18T01:27:05.681Z",
   "builtWith": "stageClientRelease, Java 24.0.2",
   "features": [
     "cache-pipeline-phase1"
@@ -29,9 +29,9 @@
   "jars": [
     {
       "name": "game-0.0.8.jar",
-      "size": 53232970,
-      "sha256": "b58b6fc954b033252a3c50efa05c37684ae36c054fade9b0e7ba91896ffc5e51",
-      "sha1": "b53509bf5370656f62e43eabcbb27c2a1408f96e",
+      "size": 53233000,
+      "sha256": "a41682461364c11bba1c8f50dacfb4114077745a87c8b564a57e8075d67d76ee",
+      "sha1": "9f48a32c36d710d2b942204ba4880f73e64fde87",
       "source": "client"
     },
     {
@@ -506,7 +506,7 @@
       "maven": "antlr:antlr:2.7.7"
     }
   ],
-  "publishedAt": "2026-11-17T20:59:48.020210500Z",
+  "publishedAt": "2026-11-18T01:27:17.459272700Z",
   "publishedBy": "Eldritch Admin",
   "template": {
     "clientJvm17Arguments": [
@@ -684,7 +684,7 @@
       "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
     ]
   },
-  "templateFrom": "bootstrap.template.json @ 09a1d43a",
+  "templateFrom": "bootstrap.template.json @ d17b9555",
   "templateSha256": "fe574f225a70b36b80aff641260d5d73adc0ff2d896ee52a78e7ca1abe2561ae",
   "argumentChecks": [
     "OK clientJvm9Arguments: Java 11.0.30 starts with it",
