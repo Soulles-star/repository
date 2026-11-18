@@ -1,20 +1,20 @@
 {
   "format": 1,
-  "id": "20261118-022705-d17b9555",
+  "id": "20261118-025051-63ad08f5",
   "version": "0.0.8",
-  "commit": "d17b9555a8d80dfcac27f0cc5133e1b03ecf2932",
+  "commit": "63ad08f506e51ea7a96e0e981a631bf0d4555bf7",
   "branch": "feat/mounts",
-  "subject": "Performance overlay Detailed also writes the 5 s frame stats to client.log",
+  "subject": "lag.log: always-on stall recorder in ~/.eldritch1/logs",
   "dirty": false,
   "dirtyFiles": [],
-  "builtAt": "2026-11-18T01:27:05.681Z",
+  "builtAt": "2026-11-18T01:50:51.564Z",
   "builtWith": "stageClientRelease, Java 24.0.2",
   "features": [
     "cache-pipeline-phase1"
   ],
   "checks": [
-    "OK Java 11.0.30 with the release's clientJvm9Arguments: OK: 3772/3772 game classes load; 34654 class and 4418 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack",
-    "OK Java 17.0.18 with the release's clientJvm17(Windows)Arguments: OK: 3772/3772 game classes load; 34654 class and 4418 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack"
+    "OK Java 11.0.30 with the release's clientJvm9Arguments: OK: 3773/3773 game classes load; 34688 class and 4421 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack",
+    "OK Java 17.0.18 with the release's clientJvm17(Windows)Arguments: OK: 3773/3773 game classes load; 34688 class and 4421 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack"
   ],
   "excluded": [
     "commons-lang3-3.0.jar: other version of commons-lang3-3.14.0.jar (Gradle resolves org.apache.commons:commons-lang3:3.14.0; one version per library)",
@@ -29,9 +29,9 @@
   "jars": [
     {
       "name": "game-0.0.8.jar",
-      "size": 53233000,
-      "sha256": "a41682461364c11bba1c8f50dacfb4114077745a87c8b564a57e8075d67d76ee",
-      "sha1": "9f48a32c36d710d2b942204ba4880f73e64fde87",
+      "size": 53239234,
+      "sha256": "4fa7875ca19e4fb16bf23108b972bab709809d47965038d68344da86f9de43cc",
+      "sha1": "22c18b0b59a6d57daa3e3d4f4305d3578acfc96c",
       "source": "client"
     },
     {
@@ -506,7 +506,7 @@
       "maven": "antlr:antlr:2.7.7"
     }
   ],
-  "publishedAt": "2026-11-18T01:27:17.459272700Z",
+  "publishedAt": "2026-11-18T01:50:59.095386800Z",
   "publishedBy": "Eldritch Admin",
   "template": {
     "clientJvm17Arguments": [
@@ -684,7 +684,7 @@
       "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
     ]
   },
-  "templateFrom": "bootstrap.template.json @ d17b9555",
+  "templateFrom": "bootstrap.template.json @ 63ad08f5",
   "templateSha256": "fe574f225a70b36b80aff641260d5d73adc0ff2d896ee52a78e7ca1abe2561ae",
   "argumentChecks": [
     "OK clientJvm9Arguments: Java 11.0.30 starts with it",
