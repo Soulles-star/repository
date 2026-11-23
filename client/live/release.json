@@ -1,20 +1,20 @@
 {
   "format": 1,
-  "id": "20261118-181155-5a230837",
+  "id": "20261123-161340-72d4926d",
   "version": "0.0.8",
-  "commit": "5a2308373b9276b1e57bcdf0a1f04798c6e7314f",
+  "commit": "72d4926de6a3f15245e2d6eaa02d61b29ef34f4d",
   "branch": "feat/mounts",
-  "subject": "NPC overhead HP bar: the layers-left label is one sprite, not about fifty fills a frame",
+  "subject": "Mount and pet effect styles: the 36 RS3 aura / weapon looks over the whole body, steady and sized right",
   "dirty": false,
   "dirtyFiles": [],
-  "builtAt": "2026-11-18T17:11:55.544Z",
+  "builtAt": "2026-11-23T15:13:40.223Z",
   "builtWith": "stageClientRelease, Java 24.0.2",
   "features": [
     "cache-pipeline-phase1"
   ],
   "checks": [
-    "OK Java 11.0.30 with the release's clientJvm9Arguments: OK: 3688/3688 game classes load; 33959 class and 4400 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack",
-    "OK Java 17.0.18 with the release's clientJvm17(Windows)Arguments: OK: 3688/3688 game classes load; 33959 class and 4400 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack"
+    "OK Java 11.0.30 with the release's clientJvm9Arguments: OK: 3715/3715 game classes load; 31987 class and 4435 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack",
+    "OK Java 17.0.18 with the release's clientJvm17(Windows)Arguments: OK: 3715/3715 game classes load; 31987 class and 4435 member references resolve; rs3-subset pack (content set 'rs3-subset'): 40 groups read (bzip2 11, gzip 24, lzma 4, plain 1), 3 models + 3 framemaps decoded; OSRS keyframes: 4/4 decoded from an osrs-anims pack"
   ],
   "excluded": [
     "commons-lang3-3.0.jar: other version of commons-lang3-3.14.0.jar (Gradle resolves org.apache.commons:commons-lang3:3.14.0; one version per library)",
@@ -29,9 +29,9 @@
   "jars": [
     {
       "name": "game-0.0.8.jar",
-      "size": 52920517,
-      "sha256": "90b0fb7601636ecd97fa16952af05d9860cafb20c7afcfb9da2dbb745419676a",
-      "sha1": "96c1c48c953292c4b2977c4b62218ea262726379",
+      "size": 53426010,
+      "sha256": "1e801adfbd726a98f7d96cb4e2c01f61dc4bb5a4c1798d893b4f57935181eea2",
+      "sha1": "5f147ce4760df54874d07eaeb1adf020e530c018",
       "source": "client"
     },
     {
@@ -506,7 +506,7 @@
       "maven": "antlr:antlr:2.7.7"
     }
   ],
-  "publishedAt": "2026-11-18T17:12:03.127806Z",
+  "publishedAt": "2026-11-23T15:13:55.221268700Z",
   "publishedBy": "Eldritch Admin",
   "template": {
     "clientJvm17Arguments": [
@@ -524,6 +524,10 @@
       "-XX:MaxGCPauseMillis=15",
       "-XX:+ExplicitGCInvokesConcurrent",
       "-XX:G1HeapRegionSize=4m",
+      "-XX:-DontCompileHugeMethods",
+      "-XX:CompileCommand=quiet",
+      "-XX:CompileCommand=exclude,eldritch/CustomItems.modify",
+      "-XX:CompileCommand=exclude,eldritch/CustomNPCs.modify",
       "-XX:+UseCompressedOops",
       "-XX:+UseStringDeduplication",
       "-XX:+OptimizeStringConcat",
@@ -547,6 +551,10 @@
       "-XX:MaxGCPauseMillis=15",
       "-XX:+ExplicitGCInvokesConcurrent",
       "-XX:G1HeapRegionSize=4m",
+      "-XX:-DontCompileHugeMethods",
+      "-XX:CompileCommand=quiet",
+      "-XX:CompileCommand=exclude,eldritch/CustomItems.modify",
+      "-XX:CompileCommand=exclude,eldritch/CustomNPCs.modify",
       "-XX:+UseCompressedOops",
       "-XX:+UseStringDeduplication",
       "-XX:+OptimizeStringConcat",
@@ -573,6 +581,10 @@
       "-XX:MaxGCPauseMillis=15",
       "-XX:+ExplicitGCInvokesConcurrent",
       "-XX:G1HeapRegionSize=4m",
+      "-XX:-DontCompileHugeMethods",
+      "-XX:CompileCommand=quiet",
+      "-XX:CompileCommand=exclude,eldritch/CustomItems.modify",
+      "-XX:CompileCommand=exclude,eldritch/CustomNPCs.modify",
       "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
       "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
       "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
@@ -589,6 +601,10 @@
       "-XX:MaxGCPauseMillis=15",
       "-XX:+ExplicitGCInvokesConcurrent",
       "-XX:G1HeapRegionSize=4m",
+      "-XX:-DontCompileHugeMethods",
+      "-XX:CompileCommand=quiet",
+      "-XX:CompileCommand=exclude,eldritch/CustomItems.modify",
+      "-XX:CompileCommand=exclude,eldritch/CustomNPCs.modify",
       "--add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED",
       "--add-opens=java.desktop/sun.swing=ALL-UNNAMED",
       "--add-opens=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED",
@@ -684,8 +700,8 @@
       "--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED"
     ]
   },
-  "templateFrom": "bootstrap.template.json @ 5a230837",
-  "templateSha256": "fe574f225a70b36b80aff641260d5d73adc0ff2d896ee52a78e7ca1abe2561ae",
+  "templateFrom": "bootstrap.template.json @ 72d4926d",
+  "templateSha256": "d2a7de6c1a23c939af43dcf439b8248b1eb5952aa1dbcfaafd766868bff2ed8e",
   "argumentChecks": [
     "OK clientJvm9Arguments: Java 11.0.30 starts with it",
     "OK launcherJvm11Arguments: Java 11.0.30 starts with it",
